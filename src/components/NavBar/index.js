@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from 'react';
 import { Nav, NavContainer, NavLogo, Header} from './navBarElement';
 import NavButton from '../NavButton'; 

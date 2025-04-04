@@ -1,7 +1,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { Nav, NavContainer, NavLogo, NavSignin, NavBtnLink } from './navBarElement';
+import { Nav, NavContainer, NavLogo, Header} from './navBarElement';
 import NavButton from '../NavButton'; 
 
 const NavBar = ({ toggle }) => {
@@ -10,7 +10,8 @@ const NavBar = ({ toggle }) => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const opacity = Math.min(scrollY / 120, 1); // Gradually increase opacity up to 1
+            const threshold = 300;
+            const opacity = scrollY > threshold ? Math.min((scrollY - threshold) / 300, 0.9) : 0; 
             setScrollOpacity(opacity);
         };
 
@@ -26,12 +27,9 @@ const NavBar = ({ toggle }) => {
         <Nav opacity={scrollOpacity}>
             <NavContainer>
                 <NavLogo onClick={toggleHome}>
-                    <h1>Kaiden Jones</h1>
+                    <Header opacity={scrollOpacity}>David Shaffer</Header>
                 </NavLogo>
                 <NavButton toggle={toggle} />
-                <NavSignin>
-                    <NavBtnLink to='/resume'>Resume</NavBtnLink>
-                </NavSignin>
             </NavContainer>
         </Nav>
     );

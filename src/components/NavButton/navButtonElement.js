@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
+import { Link as LinkRouter } from 'react-router-dom';
 import colors from '../../colors';
 
 export const Button = styled.nav`
@@ -17,7 +18,7 @@ export const MobileIcon = styled.div`
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
-        cursor: pointer;
+        cursor: pointer; 
     };
 `;
 
@@ -47,16 +48,42 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
  
     &:hover {
-        transition: all 0.2s ease-in-out;
-        font-weight: bold;
+        transition: all 0.5s ease-in-out;
+        text-decoration: underline;
+        cursor: pointer;
     };
 
     ${({ active }) => active && `
         border-bottom: 3px solid ${colors.primary};
-        font-weight: bold;
     `}
 `;
 
+export const NavSignin = styled.div`
+    display: flex;
+    align-items: center;
+`;
 
+export const NavBtnLink = styled(LinkRouter)`
+    border-radius: 50px;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: ${colors.white};
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+`;
 
 

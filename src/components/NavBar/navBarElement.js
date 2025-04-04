@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import colors from '../../colors';
-import { Link as LinkRouter } from 'react-router-dom';
+// import colors from '../../colors';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
 
-    background: rgba(0, 0, 0, ${({ opacity }) => opacity});
+    background: rgba(0, 145, 243, ${({ opacity }) => opacity});
+    // opacity: ${({ opacity }) => opacity};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -29,49 +29,26 @@ export const NavContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkScroll)`
-    color: #fff;
     justify-self: flex-start;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    // margin-left: 25px;
+    text-decoration: none;
+`;
+
+export const Header = styled.p`
+    opacity: ${({ opacity }) => opacity};
+    color: #fff;
     font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    margin-left: 25px;
     text-decoration: none;
-
-    &:hover {
-        color: ${colors.primary};
-    }
-`;
-
-export const NavSignin = styled.div`
-    display: flex;
-    align-items: center;
-`;
-
-export const NavBtnLink = styled(LinkRouter)`
-    border-radius: 50px;
-    background: ${colors.primary};
-    white-space: nowrap;
-    padding: 10px 22px;
-    color: ${colors.black};
-    font-size: 16px;
-    outline: none;
-    border: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: ${colors.black};
-    }
-
-    @media screen and (max-width: 768px){
-        display: none;
+        transition: all 0.5s ease-in-out;
+        text-decoration: underline;
+        cursor: pointer;
     }
 `;

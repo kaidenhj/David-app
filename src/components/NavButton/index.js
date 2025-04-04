@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {MobileIcon, NavMenu, NavItem, NavLinks} from './navButtonElement';
+import {MobileIcon, NavMenu, NavItem, NavLinks, NavSignin, NavBtnLink} from './navButtonElement';
 import { FaBars } from 'react-icons/fa6';
 
 const NavButton = ({toggle}) => {
@@ -58,6 +58,9 @@ const NavButton = ({toggle}) => {
                 <NavItem>
                     <NavLinks active={activeSection === 'contact'} onClick={() => scrollToSection('contact')}>Contact</NavLinks>
                 </NavItem>
+                <NavSignin>
+                    <NavBtnLink to='/resume'>Resume</NavBtnLink>
+                </NavSignin>
             </NavMenu>
         </>
     );

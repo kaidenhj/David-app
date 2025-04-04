@@ -11,7 +11,7 @@ const NavBar = ({ toggle }) => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
             const threshold = 300;
-            const opacity = scrollY > threshold ? Math.min((scrollY - threshold) / 300, 0.9) : 0; 
+            const opacity = scrollY > threshold ? Math.min((scrollY - threshold) / 420, 0.9) : 0; 
             setScrollOpacity(opacity);
         };
 

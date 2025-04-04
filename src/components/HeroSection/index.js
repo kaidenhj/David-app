@@ -1,23 +1,21 @@
 import React from "react";
-import Video from '../Videos/video.mp4';
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP} from "./heroElements";
+import Image from '../../images/set-bg.jpg';
+import { HeroContainer, HeroBg, Img, HeroContent, HeroH1, HeroP} from "./heroElements";
 
 const HeroSection = () => {
 
     return (
         <HeroContainer id="home">
             <HeroBg>
-                <VideoBg autoPlay loop muted>
-                    <source src={Video} type="video/mp4" />
-                </VideoBg>
+                    <Img src={Image}/>
             </HeroBg>
             <HeroContent>
-                <HeroH1><strong>Hi,</strong> my name is Kaiden. </HeroH1>
+                <HeroH1><strong>Hi,</strong> my name is David Shaffer. </HeroH1>
                 <HeroP>
-                I am a recent graduate of Ithaca College with a degree in Computer Science and a minor in Deaf Studies.
-                I am a Full-Stack developer with experience using Python, JavaScript, SQL, and more.
-                I am passionate about accessibility for all and environmental conservation.
-                My goal is to use my technical skills to bridge these passions and make a meaningful impact in my career.
+                I am a recent graduate of Ithaca College with a degree in TVDM and a minor in Audio.
+                I am a passionate filmmaker and photographer with a strong interest in the world of media production.
+                I am currently seeking opportunities to work in the media industry and gain valuable experience.
+                I am particularly interested in working in the fields of production and post-production.
                 </HeroP>
             </HeroContent>
         </HeroContainer>

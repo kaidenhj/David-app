@@ -53,7 +53,7 @@ const Contact = () => {
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={require('../../images/img-2.svg').default} alt='People sitting on text boxes' />
+                                <Img src={require('../../images/person-with-sky.png')} alt='People sitting on text boxes' />
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

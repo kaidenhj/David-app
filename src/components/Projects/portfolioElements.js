@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import colors from "../../colors";
-import { Link as LinkRouter} from "react-router-dom";
+// import { Link as LinkRouter} from "react-router-dom";
 
-export const PortfolioContainer = styled.div`
+export const DemoContainer = styled.div`
     height: 860px;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ export const PortfolioContainer = styled.div`
     }
 `;
 
-export const PortfolioTextContainer = styled.div`
+export const DemoTextContainer = styled.div`
     height: 80px;
     max-width: 100%;
     margin-top: 4%;
@@ -29,7 +29,7 @@ export const PortfolioTextContainer = styled.div`
 `;
 
 
-export const PortfolioWrapper = styled.div`
+export const DemoWrapper = styled.div`
     max-width: 70%;
     margin: 0 auto;
     display: grid;
@@ -37,11 +37,9 @@ export const PortfolioWrapper = styled.div`
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
-
-    
 `;
 
-export const PortfolioCard = styled(LinkRouter)`
+export const DemoVideoContainer = styled.div`
     color: ${colors.black};
     display: flex;
     flex-direction: column;
@@ -55,12 +53,13 @@ export const PortfolioCard = styled(LinkRouter)`
         cursor: pointer;
     }`;
 
-export const PortfolioIcon = styled.img`
+export const DemoVideo = styled.video`
     height: 100%;
     width: 100%;
-`;
+    controls: true;
+`
 
-export const PortfolioH1 = styled.p`
+export const DemoH1 = styled.p`
 
     font-size: 48px;
     color: ${colors.primary};
@@ -71,7 +70,7 @@ export const PortfolioH1 = styled.p`
     } 
 `;
 
-export const PortfolioP = styled.p`
+export const DemoP = styled.p`
     font-size: 1rem;
     text-align: center;
     

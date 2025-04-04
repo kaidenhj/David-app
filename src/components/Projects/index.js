@@ -1,26 +1,25 @@
 import React from "react";
-import { PortfolioContainer, PortfolioH1, PortfolioTextContainer, PortfolioWrapper, PortfolioCard, PortfolioIcon, PortfolioP} from "./portfolioElements";
-import Icon1 from "../../images/rain-bg.jpg";
-import { Button } from '../ButtonElement'
+import { DemoContainer, DemoH1, DemoTextContainer, DemoWrapper, DemoVideoContainer, DemoVideo, DemoP} from "./portfolioElements";
+import video from "../Videos/video.mp4";
 
 const Portfolio = () => {
 
     return (
-        <PortfolioContainer id="Portfolio">
-            <PortfolioWrapper>
-                <PortfolioTextContainer>
-                    <PortfolioH1>Portfolio</PortfolioH1>
-                </PortfolioTextContainer>
-                <PortfolioCard to='/utilitiesProject'>
-                    <PortfolioIcon src={Icon1} />
-                </PortfolioCard>
-                <PortfolioTextContainer>
-                    <PortfolioP>My portfolio showcases my skills and projects. Click on the image to explore.</PortfolioP>
-                    <br />
-                    <Button to="/Project1">Go To Portfolio</Button>
-                </PortfolioTextContainer>
-            </PortfolioWrapper> 
-        </PortfolioContainer>
+        <DemoContainer id="Portfolio">
+            <DemoWrapper>
+                <DemoTextContainer>
+                    <DemoH1>Demo Reel</DemoH1>
+                </DemoTextContainer>
+                <DemoVideoContainer>
+                    <DemoVideo controls>
+                        <source src={video} type="video/mp4" />
+                    </DemoVideo>
+                </DemoVideoContainer>
+                <DemoTextContainer>
+                    <DemoP>My portfolio showcases my skills and projects. Click on the image to explore.</DemoP>
+                </DemoTextContainer>
+            </DemoWrapper> 
+        </DemoContainer>
     );
 }
 

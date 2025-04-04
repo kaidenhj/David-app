@@ -1,32 +1,26 @@
 import React from "react";
-import { ProjectContainer, ProjectsH1, ProjectsWrapper, ProjectCard, ProjectIcon, ProjectH2, ProjectP } from "./projectElements";
-import Icon1 from "../../images/utilities-img-2.png";
-import Icon2 from "../../images/tame-img-2.png"; 
-import Icon3 from "../../images/sam-img-2.svg";
+import { PortfolioContainer, PortfolioH1, PortfolioTextContainer, PortfolioWrapper, PortfolioCard, PortfolioIcon, PortfolioP} from "./portfolioElements";
+import Icon1 from "../../images/rain-bg.jpg";
+import { Button } from '../ButtonElement'
 
-const Projects = () => {
+const Portfolio = () => {
     return (
-        <ProjectContainer id="projects">
-            <ProjectsH1>Projects</ProjectsH1>
-            <ProjectsWrapper>
-                <ProjectCard to='/utilitiesProject'>
-                    <ProjectIcon src={Icon1} />
-                    <ProjectH2>Utilities Database</ProjectH2>
-                    <ProjectP>Ithaca College Utilities Database System and Google Drive UI</ProjectP>
-                </ProjectCard>
-                <ProjectCard to='/tameProject'>
-                    <ProjectIcon src={Icon2} />
-                    <ProjectH2>TAME</ProjectH2>
-                    <ProjectP>Adolecent - Time Assessment and Managment Evaluation</ProjectP>
-                </ProjectCard>
-                <ProjectCard to='/satelliteProject'>
-                    <ProjectIcon src={Icon3} />
-                    <ProjectH2>SAM Habitat Distruction Model</ProjectH2>
-                    <ProjectP>Tracking Suburban Habitat Loss: An ML Approach to Satellite Image Analysis</ProjectP>
-                </ProjectCard>
-            </ProjectsWrapper>
-        </ProjectContainer>
+        <PortfolioContainer id="Portfolio">
+            <PortfolioWrapper>
+                <PortfolioTextContainer>
+                    <PortfolioH1>Portfolio</PortfolioH1>
+                </PortfolioTextContainer>
+                <PortfolioCard to='/utilitiesProject'>
+                    <PortfolioIcon src={Icon1} />
+                </PortfolioCard>
+                <PortfolioTextContainer>
+                    <PortfolioP>My portfolio showcases my skills and projects. Click on the image to explore.</PortfolioP>
+                    <br />
+                    <Button to="/Project1">Go To Portfolio</Button>
+                </PortfolioTextContainer>
+            </PortfolioWrapper> 
+        </PortfolioContainer>
     );
 }
 
-export default Projects;
+export default Portfolio;

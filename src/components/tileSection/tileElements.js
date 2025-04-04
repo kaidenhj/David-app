@@ -45,8 +45,6 @@ export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
     margin: 0 auto;
 
     @media screen and (max-width: 768px) {
@@ -60,8 +58,6 @@ export const Column2 = styled.div`
     padding: 0 15px;
     grid-area: col2;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
     margin: 0 auto;
 
     @media screen and (max-width: 768px) {
@@ -72,8 +68,13 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
     max-width: 540px;
-    padding-top: 0;
-    padding-bottom: 60px;
+    height: 100%; /* Needed for vertical centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical center */
+    align-items: center;     /* Horizontal center */
+    padding: 0 24px;
+    text-align: center; /* Optional: center text content */
 `;
 
 export const Heading = styled.h1`
@@ -83,6 +84,7 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
+    align-content: center;
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -105,7 +107,7 @@ export const SubTitle = styled.p`
 
 export const BtnWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 
     @media screen and (max-width: 768px) {
         justify-content: center; // Center button on small screens

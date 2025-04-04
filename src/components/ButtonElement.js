@@ -4,22 +4,15 @@ import colors from '../colors'
 
 export const Button = styled(LinkRouter)`
     border-radius: 50px;
-    background: ${({ primary }) => (primary ? colors.primary : colors.black)};
     white-space: nowrap;
-    padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
-    color: ${({ dark }) => (dark ? colors.black : '#fff')};
-    font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
-    outline: none;
-    border: none;
+    color: ${colors.black};
+    text-decoration: underline;
     cursor: pointer;
-    justify-content: center;
     display: flex;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: ${({ primary }) => (primary ? colors.white : colors.primary)};
+        font-weight: bold;
+        color: ${colors.primary};
     }
 `

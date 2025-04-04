@@ -12,7 +12,6 @@ export const InfoContainer = styled.div`
 `
  
 export const InfoWrapper = styled.div`
-    display: grid;
     z-index: 1;
     height: 860px;
     width: 100%;
@@ -20,7 +19,14 @@ export const InfoWrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
-    justify-content: center;
+
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+
+    @media screen and (max-width: 900px) {
+        height: 1000px; /* Shrinks when screen width is below 1024px */
+    }
 
     @media screen and (max-width: 768px) {
         padding: 0 16px; // Add some breathing room on mobile
@@ -46,6 +52,8 @@ export const Column1 = styled.div`
     grid-area: col1;
     display: flex;
     margin: 0 auto;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
 
     @media screen and (max-width: 768px) {
         width: 100%; // Full width on mobile
@@ -115,6 +123,7 @@ export const BtnWrap = styled.div`
 ` 
 
 export const ImgWrap = styled.div`
+    padding-top: 30px;
     max-width: 555px;
     height: 10%;
     display: flex;

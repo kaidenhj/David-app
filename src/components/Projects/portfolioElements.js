@@ -16,10 +16,6 @@ export const PortfolioContainer = styled.div`
     @media screen and (max-width: 768px) {
         height: 60vh; /* Shrinks further for tablets */
     }
-
-    @media screen and (max-width: 480px) {
-        height: 50vh; /* Shrinks even more for mobile */
-    }
 `;
 
 export const PortfolioTextContainer = styled.div`

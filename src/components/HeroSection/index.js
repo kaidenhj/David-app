@@ -6,7 +6,7 @@ const HeroSection = () => {
 
     return (
         <HeroContainer id="home">
-            <HeroBg>
+            <HeroBg> 
                     <Img src={Image}/>
             </HeroBg>
             <HeroContent>

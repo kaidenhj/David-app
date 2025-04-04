@@ -9,12 +9,16 @@ export const PortfolioContainer = styled.div`
     align-items: left;
     background: ${colors.tan};
 
-    @media screen and (max-width: 600px) {
-        height: 475px;
+    @media screen and (max-width: 1024px) {
+        height: 80vh; /* Shrinks when screen width is below 1024px */
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 60vh; /* Shrinks further for tablets */
     }
 
     @media screen and (max-width: 480px) {
-        height: 400px;
+        height: 50vh; /* Shrinks even more for mobile */
     }
 `;
 

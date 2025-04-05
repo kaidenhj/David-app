@@ -1,5 +1,5 @@
 import React from "react";
-import { DemoContainer, DemoH1, DemoTextContainer, DemoWrapper, DemoVideoContainer, DemoVideo, DemoP} from "./portfolioElements";
+import { DemoContainer, DemoH1, DemoTextContainer, DemoWrapper, DemoVideoContainer, DemoVideo, DemoP} from "./demoElements";
 import video from "../Videos/video.mp4";
 
 const Portfolio = () => {

@@ -4,9 +4,10 @@ import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
 import TileSection from "../components/tileSection";
 import { homeObjOne } from "../components/tileSection/data"
-import Projects from "../components/Projects";
+import DemoReel from "../components/DemoReel";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import Portfolio from "../components/Portfolio";
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +21,9 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <NavBar toggle={toggle} />
             <HeroSection id='home' />
+            <DemoReel id='demo' />
             <TileSection id='about' {...homeObjOne}/>
-            <Projects id='projects' />
+            <Portfolio id='portfolio' />
             <Contact id='contact'/>
             <Footer/>
         </>

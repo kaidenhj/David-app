@@ -45,7 +45,7 @@ const Contact = () => {
                                     <FormInput type='text' name='subject' required />
                                     <FormLabel htmlFor='for'>Message</FormLabel>
                                     <FormTextArea name='message' />
-                                    <Button type='submit'>Send</Button>
+                                    <Button colorLight={true} type='submit'>Send</Button>
                                 </Form>
                             </FormWrap>
                         </Column1>

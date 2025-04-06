@@ -4,7 +4,7 @@ import { Link as LinkScroll} from 'react-scroll';
 import { Link as LinkRouter} from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
-    background-color: ${colors.black};
+    background-color: ${colors.primaryDark};
 `;
 
 export const FooterWrapper = styled.div`

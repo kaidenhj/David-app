@@ -71,7 +71,7 @@ export const Column2 = styled.div`
     }
 `
 
-export const ImgWrap = styled.div`
+export const EmailWrap = styled.div`
     max-width: 555px;
     height: 10%;
     display: flex;
@@ -87,10 +87,12 @@ export const ImgWrap = styled.div`
     }
 `
 
-export const Img = styled.img`
+export const EmailA = styled.a`
+    font-size: 48px;
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    color: ${colors.primary};
 `
 
 
@@ -106,7 +108,7 @@ export const FormWrap = styled.div`
 `
 
 export const Form = styled.form` 
-        background: ${colors.black};
+        background: ${colors.tan};
         display: flex;
         flex-direction: column;
         max-width: 600px;
@@ -114,10 +116,7 @@ export const Form = styled.form`
         width: 100%;
         z-index: 1;
         display: grid;
-        margin: 0 auto;
-        padding: 80px 32px;
-        border-radius: 4px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.9);
+        padding: 60px 100px;
 
         @media screen and (max-width: 400px) {
             padding: 32px 32px;
@@ -147,17 +146,16 @@ export const FormLabel = styled.label`
 `
 
 export const FormInput = styled.input`
-    padding: 16px;
+    padding: 8px;
+    width: 100%;
     margin-bottom: 32px;
     border: none;
-    border-radius: 4px;
 `
 
 export const FormButton = styled.button`
     background: ${colors.primary};
     padding: 16px 0;
     border: none;
-    border-radius: 4px;
     color: #fff;
     font-size: 20px;
     cursor: pointer;

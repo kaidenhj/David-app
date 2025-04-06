@@ -6,6 +6,7 @@ import image1 from "../../images/giraffe-img.avif";
 import image2 from "../../images/lepord-img.avif";
 import image3 from "../../images/parrot-img.webp";
 import image4 from "../../images/tiger-img.jpeg";
+import { Button } from "../ButtonElement";
 
 const Portfolio = () => {
 
@@ -73,6 +74,8 @@ const Portfolio = () => {
                 <PortfolioSlide currentIndex={currentIndex}/>
                 <PortfolioTextContainer>
                     <PortfolioP>My portfolio showcases my skills and projects. Click on the image to explore.</PortfolioP>
+                    <br />
+                    <Button to="/projects">Explore/ go to portfolio</Button>
                 </PortfolioTextContainer>
             </PortfolioWrapper> 
         </PortfolioContainer>

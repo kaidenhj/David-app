@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
-// import { Button } from '../ButtonElement'
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, ImgWrap, Img, FormWrap, Form, FormH1, FormH2, FormLabel, FormTextArea
+import { Button } from '../ButtonElement'
+import { FormInput, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, EmailWrap, EmailA, FormWrap, Form, FormH1, FormH2, FormLabel, FormTextArea
  } from "./contactElements";
-import { FormInput } from "./contactElements";
-
 
 const Contact = () => {
 
@@ -47,14 +45,14 @@ const Contact = () => {
                                     <FormInput type='text' name='subject' required />
                                     <FormLabel htmlFor='for'>Message</FormLabel>
                                     <FormTextArea name='message' />
-                                    <FormInput type='submit' value='Send' />
+                                    <Button type='submit'>Send</Button>
                                 </Form>
                             </FormWrap>
                         </Column1>
                         <Column2>
-                            <ImgWrap>
-                                <Img src={require('../../images/person-with-sky.png')} alt='People sitting on text boxes' />
-                            </ImgWrap>
+                            <EmailWrap>
+                                <EmailA href="mailto:dshaffer@ithaca.edu">dshaffer@ithaca.edu</EmailA>
+                            </EmailWrap>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>

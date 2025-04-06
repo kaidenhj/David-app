@@ -66,7 +66,7 @@ const Portfolio = () => {
     };
 
     return (
-        <PortfolioContainer id="Portfolio">
+        <PortfolioContainer id="portfolio">
             <PortfolioWrapper>
                 <PortfolioTextContainer>
                     <PortfolioH1>Portfolio</PortfolioH1>

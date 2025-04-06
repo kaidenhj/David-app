@@ -5,7 +5,7 @@ import video from "../Videos/video.mp4";
 const Portfolio = () => {
 
     return (
-        <DemoContainer id="Portfolio">
+        <DemoContainer id="demo">
             <DemoWrapper>
                 <DemoTextContainer>
                     <DemoH1>Demo Reel</DemoH1>

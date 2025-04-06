@@ -7,12 +7,14 @@ const NavButton = ({toggle}) => {
     const [activeSection, setActiveSection] = useState('');
 
     useEffect(() => {
-        const sections = document.querySelectorAll('#home, #about, #projects, #contact');
+        const sections = document.querySelectorAll('#home, #demo, #about, #portfolio, #contact');
+        console.log(sections);
 
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
+                        console.log(entry.target.id);
                         setActiveSection(entry.target.id);
                     }
                 });
@@ -50,10 +52,13 @@ const NavButton = ({toggle}) => {
                     <NavLinks active={activeSection === 'home'} onClick={() => scrollToSection('home')}>Home</NavLinks>
                 </NavItem>
                 <NavItem>
+                    <NavLinks active={activeSection === 'demo'} onClick={() => scrollToSection('demo')}>Demo Reel</NavLinks>
+                </NavItem>
+                <NavItem>
                     <NavLinks active={activeSection === 'about'} onClick={() => scrollToSection('about')}>About</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks active={activeSection === 'projects'} onClick={() => scrollToSection('projects')}>Projects</NavLinks>
+                    <NavLinks active={activeSection === 'portfolio'} onClick={() => scrollToSection('portfolio')}>Portfolio</NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks active={activeSection === 'contact'} onClick={() => scrollToSection('contact')}>Contact</NavLinks>

@@ -81,18 +81,23 @@ export const EmailWrap = styled.div`
 
     @media screen and (max-width: 768px) {
         margin-top: 10px;
-        max-width: 30%; // Full width on smaller screens
+        max-width: 100%; 
         max-height: 30%;
         justify-content: center;
     }
 `
 
 export const EmailA = styled.a`
-    font-size: 48px;
+    font-size: clamp(24px, 4vw, 48px); 
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
     color: ${colors.primary};
+
+    &:hover {
+        color: ${colors.black};
+        transition: 0.3s ease-in-out;
+    }
 `
 
 
@@ -148,6 +153,7 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
     padding: 8px;
     width: 100%;
+    min-width: 150px;
     margin-bottom: 32px;
     border: none;
 `

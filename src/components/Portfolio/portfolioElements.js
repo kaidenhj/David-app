@@ -2,12 +2,17 @@ import styled from "styled-components";
 import colors from "../../colors";
 
 export const PortfolioContainer = styled.div`
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: ${colors.tan};
+    
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: ${colors.tan};
+  transition: all 0.4s ease-in-out;
+  padding-bottom: 40px;
+
+  max-height: 100vh;
 `;
+
 
 export const PortfolioTextContainer = styled.div`
     height: 80px;

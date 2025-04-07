@@ -73,6 +73,7 @@ export const EmailWrap = styled.div`
     max-width: 555px;
     height: 10%;
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
     margin: 0 auto;
@@ -170,6 +171,7 @@ export const Text = styled.p`
     margin-top: 24px;
     color: ${colors.black};
     font-size: 32px;
+    // margin-bottom: 16px;
 `
 
 export const Spacer = styled.div`

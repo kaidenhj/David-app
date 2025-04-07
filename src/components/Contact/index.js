@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { Button } from '../ButtonElement'
-import { FormInput, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, EmailWrap, EmailA, FormWrap, Form, FormH1, FormH2, FormLabel, FormTextArea
+import {Spacer, FormInput, InfoContainer, InfoWrapper, Text,  InfoRow, Column1, Column2, EmailWrap, EmailA, FormWrap, Form, FormH1, FormH2, FormLabel, FormTextArea
  } from "./contactElements";
 
 const Contact = () => {
@@ -50,6 +50,10 @@ const Contact = () => {
                             </FormWrap>
                         </Column1>
                         <Column2>
+                            <Text>
+                                You can also reach me here at:
+                            </Text>
+                            <Spacer />
                             <EmailWrap>
                                 <EmailA href="mailto:dshaffer@ithaca.edu">dshaffer@ithaca.edu</EmailA>
                             </EmailWrap>

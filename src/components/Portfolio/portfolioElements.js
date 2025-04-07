@@ -54,6 +54,7 @@ export const PortfolioImageContainer = styled.div`
 `;
 
 export const PortfolioImg = styled.img`
+    padding: 0 10px;
     width: 100%;
     height: 100%;
     margin: 0 auto;

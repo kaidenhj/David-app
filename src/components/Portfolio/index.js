@@ -75,7 +75,7 @@ const Portfolio = () => {
                 <PortfolioTextContainer>
                     <PortfolioP>My portfolio showcases my skills and projects. Click on the image to explore.</PortfolioP>
                     <br />
-                    <Button to="/projects">Explore/ go to portfolio</Button>
+                    <Button to="/portfolioPage">Explore/ go to portfolio</Button>
                 </PortfolioTextContainer>
             </PortfolioWrapper> 
         </PortfolioContainer>

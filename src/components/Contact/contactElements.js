@@ -61,8 +61,6 @@ export const Column2 = styled.div`
     padding: 0 15px;
     grid-area: col2;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
     margin: 0 auto;
 
     @media screen and (max-width: 768px) {
@@ -167,12 +165,17 @@ export const FormButton = styled.button`
     cursor: pointer;
 `
 
-export const Text = styled.span` 
+export const Text = styled.p` 
     text-align: center;
     margin-top: 24px;
-    color: #fff;
-    font-size: 14px;
+    color: ${colors.black};
+    font-size: 32px;
 `
+
+export const Spacer = styled.div`
+  height: 16px;
+  width: 100%;
+`;
 
 export const FormTextArea = styled.textarea`
     resize: none;

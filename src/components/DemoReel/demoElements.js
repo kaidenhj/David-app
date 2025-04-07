@@ -1,27 +1,27 @@
 import styled from "styled-components";
 import colors from "../../colors";
-// import { Link as LinkRouter} from "react-router-dom";
 
 export const DemoContainer = styled.div`
-    height: 860px;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     background: ${colors.tan};
+    margin-bottom: 0 75px;
 
+    /* Only override on small screens */
     @media screen and (max-width: 1024px) {
-        height: 80vh; /* Shrinks when screen width is below 1024px */
+        height: 85dvh;
     }
 
     @media screen and (max-width: 768px) {
-        height: 60vh; /* Shrinks further for tablets */
+        height: 75dvh;
     }
 `;
 
 export const DemoTextContainer = styled.div`
     height: 80px;
     max-width: 100%;
-    margin-top: 4%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,13 +30,27 @@ export const DemoTextContainer = styled.div`
 
 
 export const DemoWrapper = styled.div`
-    max-width: 70%;
+    width: 70%;
     margin: 0 auto;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     grid-gap: 16px;
-    padding: 0 50px;
+    padding: 50px;
+
+
+    @media screen and (max-width: 1024px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
 `;
 
 export const DemoVideoContainer = styled.div`
@@ -61,7 +75,7 @@ export const DemoVideo = styled.video`
 
 export const DemoH1 = styled.p`
 
-    font-size: 48px;
+    font-size: 3rem;
     color: ${colors.primary};
     margin-bottom: 24px;
 

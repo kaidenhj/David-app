@@ -16,7 +16,7 @@ const Portfolio = () => {
                     </DemoVideo>
                 </DemoVideoContainer>
                 <DemoTextContainer>
-                    <DemoP>My portfolio showcases my skills and projects. Click on the image to explore.</DemoP>
+                    <DemoP>Watch my demo reel to see what I do ;)</DemoP>
                 </DemoTextContainer>
             </DemoWrapper> 
         </DemoContainer>

@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-
     background: rgba(0, 145, 243, ${({ opacity }) => opacity});
-    // opacity: ${({ opacity }) => opacity};
+    // background: rgba(0, 145, 243, ${({ forceVisible, opacity }) => (forceVisible ? 1 : opacity / 100 || 0)}); 
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -41,6 +40,7 @@ export const NavLogo = styled(LinkScroll)`
 
 export const Header = styled.p`
     opacity: ${({ opacity }) => opacity};
+    // opacity: ${({ forceVisible, opacity }) => (forceVisible ? 1 : opacity)}; 
     color: #fff;
     font-size: 1.5rem;
     text-decoration: none;

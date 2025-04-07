@@ -1,7 +1,7 @@
 import React from "react";
 import Portfolio from "../components/PortfolioPage";
 
-const ResumePage = () => {
+const PortfolioPage = () => {
   return (
     <div>
       <Portfolio />
@@ -9,4 +9,4 @@ const ResumePage = () => {
   );
 }
 
-export default ResumePage;
+export default PortfolioPage;

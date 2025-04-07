@@ -2,19 +2,10 @@ import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 import colors from "../../colors";
 
-export const SocialIconLink = styled.a`
-    color: #fff;
-    font-size: 24px;
-
-    &:hover{
-        color: ${colors.primary};
-        transition: 0.3s ease-in-out;
-    }
-`;
 
 export const PortfolioContainer = styled.div`
     color: #fff;
-    background: ${({lightbg}) => (lightbg ? '#f9f9f9' : '#010606')};
+    background: ${colors.tan};
 `;
 
 export const PortfolioGrid = styled.div`

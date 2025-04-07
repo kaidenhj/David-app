@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
-import { ProjectContainer, ProjectH1, ProjectWrapper, ProjectIcon,
-    ProjectSection, ProjectH2, ProjectText, ProjectLink, SocialIconLink,
-    ProjectColumns, Column1, Column2, ProjectList, Item, Icon, ReturnButton, Button} from "./portfolioPageElements";
+
 import NavBar from "../NavBar"
-import { PortfolioWrapper } from "../Portfolio/portfolioElements";
+import { PortfolioContainer, PortfolioGrid } from "./portfolioPageElements";
 
 const ProjectPage = () => {
 
@@ -13,12 +11,14 @@ const ProjectPage = () => {
 
     return (
         <>
-            {/* <NavBar toggle={toggle} />
-            <PortfolioContainer lightbg={lightbg} id='portfolioPage'>
-                <PortfolioWrapper>
+            <NavBar forceVisible={true} />
+            <h1>Hello World!!</h1>
+            <p>Test to see if portfolio page works</p>
+            <PortfolioContainer id='portfolioPage'>
+                <PortfolioGrid>
 
-                </PortfolioWrapper>
-            </PortfolioContainer> */}
+                </PortfolioGrid>
+            </PortfolioContainer>
         </>
     );
 };

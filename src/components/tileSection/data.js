@@ -16,21 +16,6 @@ export const homeObjOne = {
     darkText: true
 };
 
-// export const homeObjFour = {
-//     id: 'contact',
-//     lightBg: true,
-//     lightText: false,
-//     lightTextDesc: false,
-//     headline: 'Contact',
-//     description: 'description',
-//     buttonLabel: 'label',
-//     imgStart: false,
-//     img: require('../../images/headshot.jpg').default,
-//     alt: 'People sitting on text boxes',
-//     dark: false,
-//     primary: false,
-//     darkText: true
-// };
 
 
 

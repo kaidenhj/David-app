@@ -6,8 +6,7 @@ import {FooterContainer,
     FooterLinksContainer, 
     FooterLinksWrapper, 
     FooterLinkItems, 
-    FooterLinkTitle, 
-    FooterInternalLink, 
+    FooterLinkTitle,
     FooterInternalRoute, 
     FooterExternalLink, SocialMedia, 
     SocialMediaWrap, 
@@ -39,10 +38,10 @@ const Footer = () => {
                             <FooterLinkItems>
                                 <FooterLinkTitle>Links:</FooterLinkTitle>
                                 <FooterInternalRoute to='/resume'>Resume</FooterInternalRoute>
-                                <FooterInternalLink as="div" onClick={() => handleNavClick('home')}>Home</FooterInternalLink>
-                                <FooterInternalLink as="div" onClick={() => handleNavClick('about')}>About</FooterInternalLink>
-                                <FooterInternalLink as="div" onClick={() => handleNavClick('projects')}>Projects</FooterInternalLink>
-                                <FooterInternalLink as="div" onClick={() => handleNavClick('contact')}>Contact</FooterInternalLink>
+                                <FooterInternalRoute as="div" onClick={() => handleNavClick('home')}>Home</FooterInternalRoute>
+                                <FooterInternalRoute as="div" onClick={() => handleNavClick('about')}>About</FooterInternalRoute>
+                                <FooterInternalRoute as="div" onClick={() => handleNavClick('projects')}>Projects</FooterInternalRoute>
+                                <FooterInternalRoute as="div" onClick={() => handleNavClick('contact')}>Contact</FooterInternalRoute>
                             </FooterLinkItems>
                             <FooterLinkItems>
                                 <FooterLinkTitle>Socials:</FooterLinkTitle>

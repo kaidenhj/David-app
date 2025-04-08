@@ -19,6 +19,7 @@ const Home = () => {
     }
 
     useEffect(() => {
+        console.log("home scroll")
         if (location.state?.scrollTo) {
           const section = document.getElementById(location.state.scrollTo);
           if (section) {

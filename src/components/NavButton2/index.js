@@ -38,7 +38,7 @@ const NavButton = () => {
                     <NavLinks as="div" onClick={() => handleNavClick('contact')}>Contact</NavLinks>
                 </NavItem>
                 <NavSignin>
-                    <NavBtnLink as="div" onClick={() => handleNavClick('resume')}>Resume</NavBtnLink>
+                    <NavBtnLink to="/resume">Resume</NavBtnLink>
                 </NavSignin>
             </NavMenu>
         </>

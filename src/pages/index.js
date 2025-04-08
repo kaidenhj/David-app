@@ -24,7 +24,6 @@ const Home = () => {
           if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
     
-            // Optionally clear state to prevent repeat scrolling
             window.history.replaceState({}, document.title);
           }
         }

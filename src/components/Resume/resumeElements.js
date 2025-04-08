@@ -12,7 +12,7 @@ export const Container = styled.div`
     top: 0;
     z-index: 0;
     overflow: hidden;
-    background: linear-gradient(108deg, rgba(76,163,196,1) 0%, rgba(99,210,255,1) 100%);
+    background: ${colors.tan};
 `
 
 export const Icon = styled(LinkRouter)`

@@ -18,9 +18,12 @@ export const PortfolioGrid = styled.div`
     }
 `;
 
-
-export const PortfolioCard = styled.div`
-
+export const PortfolioCard = styled.img`
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
 `;
 
 export const PortfolioH2 = styled.h2`

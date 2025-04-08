@@ -184,6 +184,5 @@ export const FormTextArea = styled.textarea`
     padding: 16px;
     margin-bottom: 32px;
     border: none;
-    border-radius: 4px;
     height: 120px;
 `

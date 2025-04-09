@@ -34,8 +34,9 @@ const Footer = () => {
                                 <FooterLinkTitle>Links:</FooterLinkTitle>
                                 <FooterInternalRoute to='/resume'>Resume</FooterInternalRoute>
                                 <FooterInternalLink onClick={() => scrollToSection('home')}>Home</FooterInternalLink>
+                                <FooterInternalLink onClick={() => scrollToSection('demo')}>Demo Reel</FooterInternalLink>
                                 <FooterInternalLink onClick={() => scrollToSection('about')}>About</FooterInternalLink>
-                                <FooterInternalLink onClick={() => scrollToSection('projects')}>Projects</FooterInternalLink>
+                                <FooterInternalLink onClick={() => scrollToSection('portfolio')}>Portfolio</FooterInternalLink>
                                 <FooterInternalLink onClick={() => scrollToSection('contact')}>Contact</FooterInternalLink>
                             </FooterLinkItems>
                             <FooterLinkItems>

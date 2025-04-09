@@ -8,7 +8,8 @@ import {FooterContainer,
     FooterLinkItems, 
     FooterLinkTitle,
     FooterInternalRoute, 
-    FooterExternalLink, SocialMedia, 
+    FooterExternalLink,
+    SocialMedia, 
     SocialMediaWrap, 
     SocialIcons, 
     SocialLogo, 
@@ -21,10 +22,13 @@ const Footer = () => {
     const location = useLocation();
 
     const handleNavClick = (sectionId) => {
+        console.log("in handle click")
         if (location.pathname === '/') {
+          console.log("On home page")
           const section = document.getElementById(sectionId);
           if (section) section.scrollIntoView({ behavior: 'smooth' });
         } else {
+          console.log("Not on home page")
           navigate('/', { state: { scrollTo: sectionId } });
         }
     };
@@ -36,12 +40,13 @@ const Footer = () => {
                     <FooterLinksContainer>
                         <FooterLinksWrapper>
                             <FooterLinkItems>
-                                <FooterLinkTitle>Links:</FooterLinkTitle>
-                                <FooterInternalRoute to='/resume'>Resume</FooterInternalRoute>
-                                <FooterInternalRoute as="div" onClick={() => handleNavClick('home')}>Home</FooterInternalRoute>
-                                <FooterInternalRoute as="div" onClick={() => handleNavClick('about')}>About</FooterInternalRoute>
-                                <FooterInternalRoute as="div" onClick={() => handleNavClick('projects')}>Projects</FooterInternalRoute>
-                                <FooterInternalRoute as="div" onClick={() => handleNavClick('contact')}>Contact</FooterInternalRoute>
+                                    <FooterLinkTitle>Links:</FooterLinkTitle>
+                                    <FooterInternalRoute to='/resume'>Resume</FooterInternalRoute>
+                                    <FooterInternalRoute as="div" onClick={() => handleNavClick('home')}>Home</FooterInternalRoute>
+                                    <FooterInternalRoute as="div" onClick={() => handleNavClick('demo')}>Demo Reel</FooterInternalRoute>
+                                    <FooterInternalRoute as="div" onClick={() => handleNavClick('about')}>About</FooterInternalRoute>
+                                    <FooterInternalRoute as="div" onClick={() => handleNavClick('portfolio')}>Portfolio</FooterInternalRoute>
+                                    <FooterInternalRoute as="div" onClick={() => handleNavClick('contact')}>Contact</FooterInternalRoute>
                             </FooterLinkItems>
                             <FooterLinkItems>
                                 <FooterLinkTitle>Socials:</FooterLinkTitle>

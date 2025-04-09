@@ -19,16 +19,27 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log("home scroll")
-        if (location.state?.scrollTo) {
-          const section = document.getElementById(location.state.scrollTo);
+      console.log("home scroll")
+      if (location.state?.scrollTo) {
+        const sectionId = location.state.scrollTo;
+    
+        const scroll = () => {
+          const section = document.getElementById(sectionId);
           if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
     
+            // Clear scrollTo state so it doesn't persist
             window.history.replaceState({}, document.title);
+          } else {
+            console.warn('Section not found yet, retrying...');
+            // Try again after a short delay
+            setTimeout(scroll, 100);
           }
-        }
-      }, [location]);
+        };
+    
+        scroll();
+      }
+    }, [location]);
 
     return (
         <>

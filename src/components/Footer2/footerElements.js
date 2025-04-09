@@ -56,21 +56,8 @@ export const FooterLinkTitle = styled.h1`
     margin-bottom: 16px;
 `;
 
-export const FooterInternalLink = styled(LinkScroll)`
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-    font-size: 14px;
-    cursor: pointer;
-
-    &:hover{
-        color: ${colors.primary};
-        transition: 0.3s ease-out;
-    }
-`;
-
 export const FooterInternalRoute = styled(LinkRouter)`
-    color: #fff;
+    color: ${colors.white};
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
@@ -83,7 +70,7 @@ export const FooterInternalRoute = styled(LinkRouter)`
 `;
 
 export const FooterExternalLink = styled.a`
-    color: #fff;
+    color: ${colors.white};
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
@@ -150,6 +137,5 @@ export const SocialIconLink = styled.a`
         transition: 0.3s ease-out;
     }
 `;
-
 
 

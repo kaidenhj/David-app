@@ -2,20 +2,22 @@ import styled from "styled-components";
 import colors from "../../colors";
 
 export const DemoContainer = styled.div`
-    height: 100dvh;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background: ${colors.tan};
-    margin-bottom: 0 75px;
 
     /* Only override on small screens */
     @media screen and (max-width: 1024px) {
-        height: 85dvh;
+        height: 85vh;
     }
 
     @media screen and (max-width: 768px) {
-        height: 75dvh;
+        height: 75vh;
     }
 `;
 

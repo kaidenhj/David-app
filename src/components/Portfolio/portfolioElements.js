@@ -2,29 +2,15 @@ import styled from "styled-components";
 import colors from "../../colors";
 
 export const PortfolioContainer = styled.div`
-    
+  padding-top: 80px;
+  padding-bottom: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
   background: ${colors.tan};
-  transition: all 0.4s ease-in-out;
-  padding-bottom: 40px;
 
   max-height: 100vh;
 `;
-
-
-export const PortfolioTextContainer = styled.div`
-    height: 80px;
-    max-width: 100%;
-    margin-top: 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    padding: 0 80px;
-`;
-
 
 export const PortfolioWrapper = styled.div`
     width: 100%;
@@ -32,7 +18,17 @@ export const PortfolioWrapper = styled.div`
     grid-template-columns: 1fr;
     align-items: center;
     grid-gap: 16px;
-    padding: 0 20px;
+    padding: 0 80px;
+`;
+
+export const PortfolioTextContainer = styled.div`
+    height: 80px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 80px;
 `;
 
 export const PortfolioImageContainer = styled.div`

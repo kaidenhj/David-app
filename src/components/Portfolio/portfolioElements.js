@@ -53,12 +53,54 @@ export const PortfolioImageContainer = styled.div`
     }
 `;
 
+export const PortfolioH2 = styled.p`
+    position: absolute;
+    font-size: 28px;
+    color: ${colors.white};
+    padding: 6px 15px;
+    text-align: center;
+    visibility: hidden;
+    z-index: 2;
+`;
+
+export const ImageDescription = styled.p`
+    position: absolute;
+    font-size: 18px;
+    color: ${colors.white};
+    padding: 40px 15px;
+    text-align: center;
+    visibility: hidden;
+    z-index: 2;
+`;
+
 export const PortfolioImg = styled.img`
+    width: 100%;
+    height: auto;
     padding: 0 10px;
+`;
+
+export const PortfolioCard = styled.div`
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 0 auto;
     display: block;
+    overflow: hidden;
+
+    &:hover ${PortfolioImg} {
+        transition: filter 0.3s ease-in-out;
+        filter: grayscale(30%) brightness(70%) blur(2px);
+    }
+
+    &:hover ${ImageDescription} {
+        transition: filter 0.3s ease-in-out;
+        visibility: visible;
+    }
+
+    &:hover ${PortfolioH2} {
+        transition: filter 0.3s ease-in-out;
+        visibility: visible;
+    }
 `;
 
 export const SocialIconLink = styled.div`

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {IoMdArrowDropright, IoMdArrowDropleft} from "react-icons/io";
-import { PortfolioContainer, PortfolioH1, PortfolioTextContainer, PortfolioWrapper, PortfolioImageContainer, PortfolioImg, SocialIconLink,  PortfolioP} from "./portfolioElements";
+import { PortfolioContainer, PortfolioH1, PortfolioH2, PortfolioTextContainer, PortfolioWrapper, PortfolioImageContainer, PortfolioImg, SocialIconLink,  PortfolioP, PortfolioCard, ImageDescription} from "./portfolioElements";
 import image0 from "../../images/deer-img.jpg";
 import image1 from "../../images/giraffe-img.avif";
 import image2 from "../../images/lepord-img.avif";
@@ -29,7 +29,11 @@ const Portfolio = () => {
                     <SocialIconLink>
                         <IoMdArrowDropleft font-size={40} onClick={() => setCurrentIndex((currentIndex - 1 + images.length) % images.length)} />
                     </SocialIconLink>
-                    <PortfolioImg src={images[currentIndex]} />
+                    <PortfolioCard>
+                        <PortfolioH2>Image Header</PortfolioH2>
+                        <ImageDescription>Image Description</ImageDescription>
+                        <PortfolioImg src={images[currentIndex]} />
+                    </PortfolioCard>
                     <SocialIconLink>
                         <IoMdArrowDropright font-size={40} onClick={() => setCurrentIndex((currentIndex + 1) % images.length)} />
                     </SocialIconLink>
@@ -41,8 +45,16 @@ const Portfolio = () => {
                     <SocialIconLink>
                         <IoMdArrowDropleft font-size={40} onClick={() => setCurrentIndex((currentIndex - 1 + images.length) % images.length)} />
                     </SocialIconLink>
-                    <PortfolioImg src={images[currentIndex]} />
-                    <PortfolioImg src={images[(currentIndex + 1) % images.length]} />
+                    <PortfolioCard>
+                        <PortfolioH2>Image Header</PortfolioH2>
+                        <ImageDescription>Image Description</ImageDescription>
+                        <PortfolioImg src={images[currentIndex]} />
+                    </PortfolioCard>
+                    <PortfolioCard>
+                        <PortfolioH2>Image Header</PortfolioH2>
+                        <ImageDescription>Image Description</ImageDescription>
+                        <PortfolioImg src={images[(currentIndex + 1) % images.length]} />
+                    </PortfolioCard>
                     <SocialIconLink>
                         <IoMdArrowDropright font-size={40} onClick={() => setCurrentIndex((currentIndex + 1 ) % images.length)} />
                     </SocialIconLink>
@@ -54,9 +66,21 @@ const Portfolio = () => {
                     <SocialIconLink>
                         <IoMdArrowDropleft font-size={40} onClick={() => setCurrentIndex((currentIndex - 1 + images.length) % images.length)} />
                     </SocialIconLink>
-                    <PortfolioImg src={images[currentIndex]} />
-                    <PortfolioImg src={images[(currentIndex + 1) % images.length]} />
-                    <PortfolioImg src={images[(currentIndex + 2) % images.length]} />
+                    <PortfolioCard>
+                        <PortfolioH2>Image Header</PortfolioH2>
+                        <ImageDescription>Image Description</ImageDescription>
+                        <PortfolioImg src={images[currentIndex]} />
+                    </PortfolioCard>
+                    <PortfolioCard>
+                        <PortfolioH2>Image Header</PortfolioH2>
+                        <ImageDescription>Image Description</ImageDescription>
+                        <PortfolioImg src={images[(currentIndex + 1) % images.length]} />
+                    </PortfolioCard>
+                    <PortfolioCard>
+                        <PortfolioH2>Image Header</PortfolioH2>
+                        <ImageDescription>Image Description</ImageDescription>
+                        <PortfolioImg src={images[(currentIndex + 2) % images.length]} />
+                    </PortfolioCard>
                     <SocialIconLink>
                         <IoMdArrowDropright font-size={40} onClick={() => setCurrentIndex((currentIndex + 1) % images.length)} />
                     </SocialIconLink>

@@ -8,7 +8,6 @@ export const PortfolioContainer = styled.div`
   display: flex;
   flex-direction: column;
   background: ${colors.tan};
-
   max-height: 100vh;
 `;
 
@@ -28,26 +27,12 @@ export const PortfolioTextContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding: 0 80px;
+    padding: 10px 130px;
 `;
 
 export const PortfolioImageContainer = styled.div`
-
-
-    // margin: 0 auto;
-    // display: flex;
-    // grid-template-columns: 0.01fr 1fr 1fr 1fr 0.01fr;
-    // align-items: center;
-
-    
-    // @media screen and (max-width: 1000px) {
-    //     grid-template-columns: 0.01fr 1fr 1fr 0.01fr;
-    // }
-    
-    // @media screen and (max-width: 768px) {
-    //     grid-template-columns: 0.01fr 1fr 0.01fr;
-    //     padding: 0 20px;
-    // }
+    display: flex;
+    overflow: hidden;
 `;
 
 export const PortfolioH2 = styled.p`
@@ -71,20 +56,12 @@ export const ImageDescription = styled.p`
 `;
 
 export const PortfolioImg = styled.img`
-    width: 100%;
-    height: auto;
+    width: 40%;
+    height: 16rem;
+    opject-fit: cover;
     padding: 0 10px;
-`;
 
-export const PortfolioCard = styled.div`
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: block;
-    overflow: hidden;
-
-    &:hover ${PortfolioImg} {
+    &:hover {
         transition: filter 0.3s ease-in-out;
         filter: grayscale(30%) brightness(70%) blur(2px);
     }
@@ -97,7 +74,15 @@ export const PortfolioCard = styled.div`
     &:hover ${PortfolioH2} {
         transition: filter 0.3s ease-in-out;
         visibility: visible;
-    }
+`;
+
+export const PortfolioCards = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
 `;
 
 export const SocialIconLink = styled.div`
@@ -128,5 +113,4 @@ export const PortfolioH1 = styled.p`
 export const PortfolioP = styled.p`
     font-size: 1rem;
     text-align: center;
-    
 `;

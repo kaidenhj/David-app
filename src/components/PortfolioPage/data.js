@@ -4,7 +4,7 @@ import image2 from "../../images/lepord-img.avif";
 import image3 from "../../images/parrot-img.webp";
 import image4 from "../../images/tiger-img.jpeg";
 
-const images = [
+export const images = [
   { img: image0, header: "Deer Image", description: "Image Discription", video: false },
   { img: image1, header: "Giraffe Image", description: "Image Discription", video: false },
   { img: image2, header: "Lepord Image", description: "Image Discription", video: false },

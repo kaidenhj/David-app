@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from "react";
 import {IoMdArrowDropright, IoMdArrowDropleft} from "react-icons/io";
 import { PortfolioContainer, PortfolioH1, PortfolioH2, PortfolioTextContainer, PortfolioWrapper, PortfolioImageContainer, PortfolioImg, SocialIconLink,  PortfolioP, PortfolioCard, ImageDescription} from "./portfolioElements";
+// import { caroselImages } from "./data";
+import { Button } from "../ButtonElement";
+
 import image0 from "../../images/deer-img.jpg";
 import image1 from "../../images/giraffe-img.avif";
 import image2 from "../../images/lepord-img.avif";
 import image3 from "../../images/parrot-img.webp";
 import image4 from "../../images/tiger-img.jpeg";
-import { Button } from "../ButtonElement";
 
 const Portfolio = () => {
 

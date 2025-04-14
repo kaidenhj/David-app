@@ -2,7 +2,10 @@
   box-sizing: border-box;
   margin : 0;
   padding : 0;
-  font-family: 'encode sans expanded', sans-serif;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 100-900;
+  font-style: normal;
 
 }
 

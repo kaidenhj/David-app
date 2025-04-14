@@ -12,8 +12,8 @@ const Resume = () => {
           title="resume document" 
           src="/Kaiden_Jones_Resume_07.pdf">
         </PdfIframe>
-        <Footer />
       </Container>
+      <Footer />
       
     </>
   );

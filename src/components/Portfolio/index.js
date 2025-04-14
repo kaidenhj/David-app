@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {IoMdArrowDropright, IoMdArrowDropleft} from "react-icons/io";
-import { PortfolioContainer, PortfolioH1, PortfolioH2, PortfolioTextContainer, PortfolioWrapper, PortfolioImageContainer, PortfolioImg, SocialIconLink,  PortfolioP, PortfolioCard, ImageDescription} from "./portfolioElements";
-// import { caroselImages } from "./data";
+import { PortfolioContainer, PortfolioH1,  PortfolioH2, PortfolioTextContainer, PortfolioWrapper, PortfolioImageContainer, PortfolioImg, SocialIconLink,  PortfolioP, PortfolioCard, ImageDescription} from "./portfolioElements";
 import { Button } from "../ButtonElement";
 
 import image0 from "../../images/deer-img.jpg";

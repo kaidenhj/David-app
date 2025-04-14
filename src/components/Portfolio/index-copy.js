@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import {IoMdArrowDropright, IoMdArrowDropleft} from "react-icons/io";
-import { PortfolioContainer, PortfolioH1, PortfolioH2, PortfolioTextContainer, PortfolioWrapper, PortfolioImageContainer, PortfolioImg, SocialIconLink,  PortfolioP, PortfolioCards, PortfolioCard, ImageDescription} from "./portfolioElements-copy";
+import { PortfolioContainer, PortfolioH1, PortfolioH2, PortfolioTextContainer, PortfolioWrapper, PortfolioImageContainer, PortfolioImg, SocialIconLink,  PortfolioP, PortfolioCards, ImageDescription} from "./portfolioElements-copy";
 import caroselImages from "./data";
 import { Button } from "../ButtonElement";
+// import Carosel from "./Carosel/carosel"
 
 const Portfolio = () => {
 

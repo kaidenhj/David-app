@@ -75,10 +75,10 @@ export const DemoVideo = styled.video`
     controls: true;
 `
 
-export const DemoH1 = styled.p`
+export const DemoH1 = styled.h2`
 
     font-size: 3rem;
-    color: ${colors.primary};
+    color: ${colors.primaryDark};
     margin-bottom: 24px;
 
         @media screen and (max-width: 480px) {
@@ -87,6 +87,7 @@ export const DemoH1 = styled.p`
 `;
 
 export const DemoP = styled.p`
+    color: ${colors.primary};
     font-size: 1rem;
     text-align: center;
     

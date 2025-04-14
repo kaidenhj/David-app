@@ -3,7 +3,7 @@ import colors from '../../colors'
 
 export const InfoContainer = styled.div`
     color : #fff;
-    background: ${({lightBg}) => (lightBg ? colors.white : colors.black)};
+    background: ${colors.tan};
     display: flex;
     width: 100%;
 
@@ -112,7 +112,7 @@ export const FormWrap = styled.div`
 `
 
 export const Form = styled.form` 
-        background: ${colors.tan};
+        background: ${colors.darkBrown};
         display: flex;
         flex-direction: column;
         max-width: 600px;
@@ -129,27 +129,29 @@ export const Form = styled.form`
 
 export const FormH1 = styled.h1`
 margin-bottom: 40px;
-color: #fff;
-font-size: 20px;
+color: ${colors.lightBrown};
+font-size: 45px;
 font-weight: 400;
 text-align: center;
 `
 
-export const FormH2 = styled.h1`
+export const FormH2 = styled.h2`
 margin-bottom: 40px;
-color: #fff;
-font-size: 20px;
+color: ${colors.lightBrown};
+font-size: 40px;
 font-weight: 400;
 text-align: center;
 `
 
 export const FormLabel = styled.label`
     margin-bottom: 8px; 
-    font-size: 14px;
-    color: #fff;    
+    font-size: 21px;
+    color: ${colors.lightBrown};
 `
 
 export const FormInput = styled.input`
+    background: ${colors.lightBrown};
+    color: ${colors.darkBrown};
     padding: 8px;
     width: 100%;
     min-width: 150px;
@@ -157,19 +159,10 @@ export const FormInput = styled.input`
     border: none;
 `
 
-export const FormButton = styled.button`
-    background: ${colors.primary};
-    padding: 16px 0;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-`
-
 export const Text = styled.p` 
     text-align: center;
     margin-top: 24px;
-    color: ${colors.black};
+    color: ${colors.primaryDark};
     font-size: 32px;
     // margin-bottom: 16px;
 `
@@ -180,6 +173,8 @@ export const Spacer = styled.div`
 `;
 
 export const FormTextArea = styled.textarea`
+    background: ${colors.lightBrown};
+    color: ${colors.darkBrown};
     resize: none;
     padding: 16px;
     margin-bottom: 32px;

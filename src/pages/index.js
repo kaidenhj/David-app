@@ -7,7 +7,7 @@ import { homeObjOne } from "../components/tileSection/data"
 import DemoReel from "../components/DemoReel";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import Portfolio from "../components/Portfolio/index-copy";
+import Portfolio from "../components/Portfolio/index";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {

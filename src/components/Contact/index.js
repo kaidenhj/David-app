@@ -35,7 +35,7 @@ const Contact = () => {
                         <Column1>
                             <FormWrap id='formwrap'>
                                 <Form ref={form} onSubmit={sendEmail}>
-                                    <FormH1>Contact me.</FormH1>
+                                    <FormH1>Contact me</FormH1>
                                     <FormH2>My inbox is always open for inquiries.</FormH2>
                                     <FormLabel htmlFor='for'>Name</FormLabel>
                                     <FormInput type='text' name='name' required />
@@ -45,7 +45,7 @@ const Contact = () => {
                                     <FormInput type='text' name='subject' required />
                                     <FormLabel htmlFor='for'>Message</FormLabel>
                                     <FormTextArea name='message' />
-                                    <Button colorLight={true} type='submit'>Send</Button>
+                                    <Button lightColor={true} type='submit'>Send</Button>
                                 </Form>
                             </FormWrap>
                         </Column1>

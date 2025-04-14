@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-// import colors from '../../colors';
 import { Link as LinkScroll } from 'react-scroll';
+import colors from "../../colors"
 
 export const Nav = styled.nav`
-    background: rgba(0, 145, 243, ${({ opacity }) => opacity});
-    // background: rgba(0, 145, 243, ${({ forceVisible, opacity }) => (forceVisible ? 1 : opacity / 100 || 0)}); 
+    background: ${colors.lightBrown};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -20,7 +19,6 @@ export const Nav = styled.nav`
     }
 `;
 
-
 export const NavContainer = styled.div`
     display: flex;
     justify-content: space-between;
@@ -34,13 +32,11 @@ export const NavLogo = styled(LinkScroll)`
     justify-self: flex-start;
     display: flex;
     align-items: center;
-    // margin-left: 25px;
     text-decoration: none;
 `;
 
 export const Header = styled.p`
     opacity: ${({ opacity }) => opacity};
-    // opacity: ${({ forceVisible, opacity }) => (forceVisible ? 1 : opacity)}; 
     color: #fff;
     font-size: 1.5rem;
     text-decoration: none;

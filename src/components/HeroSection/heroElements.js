@@ -3,7 +3,7 @@ import colors from '../../colors'
 
 
 export const HeroContainer = styled.div`
-    background: ${colors.black};
+    background: ${colors.tan};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,8 +70,8 @@ export const HeroContent = styled.div`
     align-items: flex-start;
 `
 
-export const HeroH1 = styled.p`
-    color: #fff;
+export const HeroH1 = styled.h2`
+    color: ${colors.primaryDark};
     font-size: 48px;
     text-align: left;
 
@@ -86,7 +86,7 @@ export const HeroH1 = styled.p`
 
 export const HeroP = styled.p`
     margin-top: 24px;
-    color: #fff;
+    color: ${colors.primary};
     font-size; 24px;
     text-align: left;
     max-width: 1200px;

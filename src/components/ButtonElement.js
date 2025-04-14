@@ -5,7 +5,7 @@ import colors from '../colors'
 export const Button = styled(LinkRouter)`
     border-radius: 50px;
     white-space: nowrap;
- color: ${({ colorLight }) => colorLight ? colors.white : colors.black};
+    color: ${({lightColor}) => (lightColor ? colors.lightBrown : colors.primary)};
     text-decoration: underline;
     cursor: pointer;
     display: flex;

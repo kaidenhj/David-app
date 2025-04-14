@@ -10,7 +10,7 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 768px){
-        color: #fff;
+        color: ${colors.tan};
         display: block;
         position: absolute;
         top: 0;
@@ -38,7 +38,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkRouter)`
-    color: #fff;
+    color: ${colors.tan};
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -66,7 +66,7 @@ export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
     white-space: nowrap;
     padding: 10px 22px;
-    color: ${colors.white};
+    color: ${colors.tan};
     font-size: 16px;
     outline: none;
     border: none;

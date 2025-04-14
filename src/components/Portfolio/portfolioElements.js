@@ -50,7 +50,7 @@ export const PortfolioImageContainer = styled.div`
     // }
 `;
 
-export const PortfolioH2 = styled.p`
+export const PortfolioH2 = styled.h2`
     position: absolute;
     font-size: 28px;
     color: ${colors.white};
@@ -114,10 +114,10 @@ export const SocialIconLink = styled.div`
     }
 `;
 
-export const PortfolioH1 = styled.p`
+export const PortfolioH1 = styled.h2`
 
     font-size: 48px;
-    color: ${colors.primary};
+    color: ${colors.primaryDark};
     margin-bottom: 24px;
 
         @media screen and (max-width: 480px) {
@@ -126,6 +126,7 @@ export const PortfolioH1 = styled.p`
 `;
 
 export const PortfolioP = styled.p`
+    color: ${colors.primary};
     font-size: 1rem;
     text-align: center;
     

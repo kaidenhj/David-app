@@ -38,7 +38,7 @@ export const PortfolioImageContainer = styled.div`
 export const PortfolioH2 = styled.p`
     position: absolute;
     font-size: 28px;
-    color: ${colors.white};
+    color: ${colors.primary};
     padding: 6px 15px;
     text-align: center;
     visibility: hidden;
@@ -48,7 +48,7 @@ export const PortfolioH2 = styled.p`
 export const ImageDescription = styled.p`
     position: absolute;
     font-size: 18px;
-    color: ${colors.white};
+    color: ${colors.primary};
     padding: 40px 15px;
     text-align: center;
     visibility: hidden;
@@ -101,8 +101,8 @@ export const SocialIconLink = styled.div`
 
 export const PortfolioH1 = styled.p`
 
-    font-size: 48px;
-    color: ${colors.primary};
+    font-size: 3rem;
+    color: ${colors.primaryDark};
     margin-bottom: 24px;
 
         @media screen and (max-width: 480px) {
@@ -111,6 +111,7 @@ export const PortfolioH1 = styled.p`
 `;
 
 export const PortfolioP = styled.p`
+    color: ${colors.primary}
     font-size: 1rem;
     text-align: center;
 `;

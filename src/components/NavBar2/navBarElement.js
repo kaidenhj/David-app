@@ -3,9 +3,8 @@ import colors from '../../colors';
 import { Link as LinkRoute } from 'react-router-dom';
 
 export const Nav = styled.nav`
-    background: ${colors.primaryDark};
+    background: ${colors.lightBrown};
     height: 80px;
-    // margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +35,7 @@ export const NavLogo = styled(LinkRoute)`
 `;
 
 export const Header = styled.p`
-    color: #fff;
+    color: ${colors.tan};
     font-size: 1.5rem;
     text-decoration: none;
     cursor: pointer;

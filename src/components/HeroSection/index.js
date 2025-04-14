@@ -1,14 +1,10 @@
 import React from "react";
-import Image from '../../images/set-bg.jpg';
-import { HeroContainer, HeroBg, Img, HeroContent, HeroH1, HeroP} from "./heroElements";
+import { HeroContainer, HeroContent, HeroH1, HeroP} from "./heroElements";
 
 const HeroSection = () => {
 
     return (
         <HeroContainer id="home">
-            <HeroBg> 
-                    <Img src={Image}/>
-            </HeroBg>
             <HeroContent>
                 <HeroH1><strong>Hi,</strong> my name is David Shaffer. </HeroH1>
                 <HeroP>

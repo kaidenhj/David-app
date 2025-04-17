@@ -21,7 +21,7 @@ function Carousel() {
 
   const cardsPerSet = carouselImages.length;
   const currentIndex = Math.round(-translateX / cardWidth);
-  console.log("Current Index"+currentIndex)
+  console.log("Current Portfilio Card Index"+currentIndex)
 
   useEffect(() => {
     if (cardRef.current && trackRef.current) {
@@ -33,6 +33,16 @@ function Carousel() {
       setTranslateX(-centerOffset);
     }
   }, [cards, middleIndex]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (trackRef.current) {
+        centerCarousel(trackRef.current);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+  } );
 
   const centerCarousel = (track) => {
     if (cardRef.current && trackRef.current) {
@@ -82,6 +92,7 @@ function Carousel() {
                 key={index}
                 prop={card.img}
                 description={card.description}
+                header={card.header}
               />
           ))}
         </CarouselTrack>

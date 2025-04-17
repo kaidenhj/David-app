@@ -11,6 +11,3 @@ const colors = {
   };
   
 export default colors;
-
-
-// d9c6a8

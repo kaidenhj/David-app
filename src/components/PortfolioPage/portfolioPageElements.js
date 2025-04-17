@@ -21,7 +21,7 @@ export const PortfolioGrid = styled.div`
 export const ImageDescription = styled.p`
     position: absolute;
     font-size: 18px;
-    color: ${colors.white};
+    color: ${colors.primaryDark};
     padding: 40px 15px;
     text-align: center;
     visibility: hidden;
@@ -31,7 +31,7 @@ export const ImageDescription = styled.p`
 export const PortfolioH2 = styled.p`
     position: absolute;
     font-size: 28px;
-    color: ${colors.white};
+    color: ${colors.primaryDark};
     padding: 6px 15px;
     text-align: center;
     visibility: hidden;
@@ -51,14 +51,23 @@ export const PortfolioCard = styled.div`
     display: flex;
     overflow: hidden;
 
+
+    &:hover{
+      transition: filter 0.3s ease-in-out;
+        background: ${colors.primaryLight};
+        z-index: 2;
+    } 
+
     &:hover ${PortfolioImg} {
-        transition: filter 0.3s ease-in-out;
-        filter: grayscale(30%) brightness(70%) blur(2px);
+      transition: filter 0.3s ease-in-out;
+      filter: blur(4px);
+      opacity: 30%;
+      z-index: 0;
     }
 
     &:hover ${ImageDescription} {
-        transition: filter 0.3s ease-in-out;
-        visibility: visible;
+      transition: filter 0.3s ease-in-out;
+      visibility: visible;
     }
 
     &:hover ${PortfolioH2} {

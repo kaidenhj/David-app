@@ -8,7 +8,7 @@ export const InfoContainer = styled.div`
     width: 100%;
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        padding: 6px 0;
     }
 `
  
@@ -112,35 +112,40 @@ export const FormWrap = styled.div`
 `
 
 export const Form = styled.form` 
-        background: ${colors.darkBrown};
-        display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        height: auto;
-        width: 100%;
-        z-index: 1;
-        display: grid;
-        padding: 60px 100px;
+    background: ${colors.darkBrown};
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    padding: 60px 100px;
 
-        @media screen and (max-width: 400px) {
-            padding: 32px 32px;
-        }
+    @media screen and (max-width: 922px) {
+        transition: 0.9s ease-in-out;
+        padding: 40px 70px;
+    }
 `
 
 export const FormH1 = styled.h1`
-margin-bottom: 40px;
-color: ${colors.lightBrown};
-font-size: 45px;
-font-weight: 400;
-text-align: center;
+    margin-bottom: 40px;
+    color: ${colors.lightBrown};
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
 `
 
 export const FormH2 = styled.h2`
-margin-bottom: 40px;
-color: ${colors.lightBrown};
-font-size: 40px;
-font-weight: 400;
-text-align: center;
+    margin-bottom: 40px;
+    color: ${colors.lightBrown};
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+
+@media screen and (max-width: 922px) {
+  display: none;
+}
 `
 
 export const FormLabel = styled.label`
@@ -160,11 +165,10 @@ export const FormInput = styled.input`
 `
 
 export const Text = styled.p` 
-    text-align: center;
+    text-align: left;
     margin-top: 24px;
     color: ${colors.primaryDark};
     font-size: 32px;
-    // margin-bottom: 16px;
 `
 
 export const Spacer = styled.div`

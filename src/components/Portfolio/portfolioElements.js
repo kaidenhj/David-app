@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "../../colors";
 
 export const PortfolioContainer = styled.div`
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
   display: flex;

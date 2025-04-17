@@ -5,6 +5,10 @@ export const CardImg = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
+
+  &:hover{
+    transition: scale(1.08);
+  }
 `;
 
 export const CardH2 = styled.h2`
@@ -34,6 +38,7 @@ export const CardContainer = styled.div`
   aspect-ratio: 4 / 3;
 
     &:hover{
+      transition: filter 0.3s ease-in-out;
       background: ${colors.primaryLight};
       z-index: 2;
     } 

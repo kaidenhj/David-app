@@ -2,8 +2,7 @@ import styled from "styled-components";
 import colors from "../../colors";
 
 export const PortfolioContainer = styled.div`
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 80px 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -18,7 +17,7 @@ export const PortfolioWrapper = styled.div`
 `;
 
 export const PortfolioTextContainer = styled.div`
-    height: 80px;
+    height: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;

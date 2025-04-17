@@ -120,11 +120,11 @@ export const Form = styled.form`
     width: 100%;
     z-index: 1;
     display: grid;
-    padding: 60px 100px;
+    padding: 60px 80px;
 
     @media screen and (max-width: 922px) {
         transition: 0.9s ease-in-out;
-        padding: 40px 70px;
+        padding: 40px 55px;
     }
 `
 

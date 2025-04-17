@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav, NavContainer, NavLogo, Header} from './navBarElement';
 import NavButton from '../NavButton2'; 
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
 
     return (
         <Nav>
@@ -10,7 +10,7 @@ const NavBar = () => {
                 <NavLogo to='/'>
                     <Header>David Shaffer</Header>
                 </NavLogo>
-                <NavButton  />
+                <NavButton  toggle={toggle}/>
             </NavContainer>
         </Nav>
     );

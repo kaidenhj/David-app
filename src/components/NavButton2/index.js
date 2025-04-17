@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import {MobileIcon, NavMenu, NavItem, NavLinks, NavSignin, NavBtnLink} from './navButtonElement';
 import { FaBars } from 'react-icons/fa6';
 
-const NavButton = () => {
+const NavButton = ({toggle}) => {
     const navigate = useNavigate();
     const location = useLocation();
     
@@ -18,9 +18,15 @@ const NavButton = () => {
       }
     };
 
+    const handleToggle = () => {
+        toggle();
+    };
+
     return (
         <>
-            <MobileIcon >
+            <MobileIcon onClick={() => { 
+                handleToggle();
+            }}>
                 <FaBars />
             </MobileIcon>
             <NavMenu>

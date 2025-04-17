@@ -52,7 +52,7 @@ const Contact = () => {
                         <Column2>
                             <EmailWrap>
                                 <Text>
-                                    You can also reach me here at:
+                                    You can also reach me at:
                                 </Text>
                                 <EmailA href="mailto:dshaffer@ithaca.edu">dshaffer@ithaca.edu</EmailA>
                             </EmailWrap>

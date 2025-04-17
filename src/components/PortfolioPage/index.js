@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import NavBar from "../NavBar2"
 import { PortfolioCard, PortfolioImg, PortfolioContainer, PortfolioGrid, ImageDescription, PortfolioH2} from "./portfolioPageElements";
 import images from "./data";
-import Footer from "../Footer2"
+
 
 const ProjectPage = () => {
 
@@ -12,7 +11,6 @@ const ProjectPage = () => {
 
     return (
         <>
-            <NavBar />
             <PortfolioContainer id='portfolioPage'>
                 <PortfolioGrid>
                     {images.map((image, index) => (
@@ -24,7 +22,6 @@ const ProjectPage = () => {
                     ))}
                 </PortfolioGrid>
             </PortfolioContainer>
-            <Footer />
         </>
     );
 };

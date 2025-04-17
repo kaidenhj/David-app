@@ -13,10 +13,6 @@ export const PortfolioContainer = styled.div`
 `;
 
 export const PortfolioWrapper = styled.div`
-    width: 100%;
-    display: flex;
-    grid-template-columns: 1fr;
-    align-items: center;
     grid-gap: 16px;
     padding: 0 80px;
 `;
@@ -29,25 +25,6 @@ export const PortfolioTextContainer = styled.div`
     align-items: flex-start;
     text-align: left;
     padding: 0 80px;
-`;
-
-export const PortfolioImageContainer = styled.div`
-
-
-    // margin: 0 auto;
-    // display: flex;
-    // grid-template-columns: 0.01fr 1fr 1fr 1fr 0.01fr;
-    // align-items: center;
-
-    
-    // @media screen and (max-width: 1000px) {
-    //     grid-template-columns: 0.01fr 1fr 1fr 0.01fr;
-    // }
-    
-    // @media screen and (max-width: 768px) {
-    //     grid-template-columns: 0.01fr 1fr 0.01fr;
-    //     padding: 0 20px;
-    // }
 `;
 
 export const PortfolioH2 = styled.h2`
@@ -118,9 +95,8 @@ export const PortfolioH1 = styled.h2`
 
     font-size: 48px;
     color: ${colors.primaryDark};
-    margin-bottom: 24px;
 
-        @media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
         font-size: 2rem;
     } 
 `;

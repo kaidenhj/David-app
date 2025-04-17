@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import Card from "./Card";
 import carouselImages from "./data";
-import { CarouselWrapper, CarouselTrack, Handle } from "./CarouselElements";
+import { CarouselContainer, CarouselWrapper, CarouselTrack, Handle } from "./CarouselElements";
+import {IoMdArrowDropright, IoMdArrowDropleft} from "react-icons/io";
 
 
 function Carousel() {
@@ -65,8 +66,8 @@ function Carousel() {
   };
 
   return (
-    <>
-      <Handle onClick={() => handleClick(0)}>{"<"}</Handle>
+    <CarouselContainer>
+      <Handle onClick={() => handleClick(0)}><IoMdArrowDropleft/></Handle>
 
       <CarouselWrapper>
         <CarouselTrack
@@ -86,8 +87,8 @@ function Carousel() {
         </CarouselTrack>
       </CarouselWrapper>
 
-      <Handle onClick={() => handleClick(1)}>{">"}</Handle>
-    </>
+      <Handle onClick={() => handleClick(1)}><IoMdArrowDropright/></Handle>
+    </CarouselContainer>
   );
 }
 

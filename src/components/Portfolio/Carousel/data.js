@@ -1,8 +1,8 @@
-import image0 from "../images/deer-img.jpg";
-import image1 from "../images/giraffe-img.avif";
-import image2 from "../images/lepord-img.avif";
-import image3 from "../images/parrot-img.webp";
-import image4 from "../images/zebra-img.jpg";
+import image0 from "../../../images/deer-img.jpg";
+import image1 from "../../../images/giraffe-img.avif";
+import image2 from "../../../images/lepord-img.avif";
+import image3 from "../../../images/parrot-img.webp";
+import image4 from "../../../images/zebra-img.jpg";
 
 const caroselImages = [
   { img: image0, header: "Deer Image", description: "Deer Image Discription", video: false, idx: 0},

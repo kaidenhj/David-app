@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../../colors";
 
 export const CarouselContainer = styled.div`
   display: flex;
@@ -30,9 +31,14 @@ export const Handle = styled.div`
   padding: 0 1rem;
   user-select: none;
   z-index: 1;
-
+  color: ${colors.lightBrown};
 
   @media (min-width: 768px) {
     font-size: 3rem; /* corresponds to 'md:text-5xl' in Tailwind */
+  }
+
+  &:hover{
+    transition: 0.5s ease-in-out;
+    color: ${colors.darkBrown};
   }
 `;

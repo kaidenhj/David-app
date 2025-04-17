@@ -34,7 +34,7 @@ export const NavLogo = styled(LinkRoute)`
     text-decoration: none;
 `;
 
-export const Header = styled.p`
+export const Header = styled.h2`
     color: ${colors.tan};
     font-size: 1.5rem;
     text-decoration: none;

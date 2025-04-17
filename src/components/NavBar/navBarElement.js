@@ -35,7 +35,7 @@ export const NavLogo = styled(LinkScroll)`
     text-decoration: none;
 `;
 
-export const Header = styled.p`
+export const Header = styled.h2`
     opacity: ${({ opacity }) => opacity};
     color: #fff;
     font-size: 1.5rem;

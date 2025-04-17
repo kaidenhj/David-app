@@ -6,7 +6,7 @@ const HeroSection = () => {
     return (
         <HeroContainer id="home">
             <HeroContent>
-                <HeroH1><strong>Hi,</strong> my name is David Shaffer. </HeroH1>
+                <HeroH1>Hi<strong>, my name is David Shaffer.</strong></HeroH1>
                 <HeroP>
                 I am a recent graduate of Ithaca College with a degree in TVDM and a minor in Audio.
                 I am a passionate filmmaker and photographer with a strong interest in the world of media production.

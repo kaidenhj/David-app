@@ -84,7 +84,7 @@ export const TextWrapper = styled.div`
     text-align: center; /* Optional: center text content */
 `;
 
-export const Heading = styled.p`
+export const Heading = styled.h2`
     color: ${colors.primaryDark};
     margin-bottom: 18px;
     margin-top: 24px;

@@ -48,7 +48,7 @@ const Footer = () => {
                     </FooterLinksContainer>
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo onClick={() => scrollToSection('home')}>David Shaffer</SocialLogo>
+                            <SocialLogo onClick={() => scrollToSection('home')}><h2>David Shaffer</h2></SocialLogo>
                             <WebsiteRights>David Shaffer © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink href='https://www.linkedin.com/in/david-shaffer-111a89228/' target='_blank' aria-label='LinkedIn'>

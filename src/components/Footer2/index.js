@@ -57,7 +57,7 @@ const Footer = () => {
                     </FooterLinksContainer>
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo as="div" onClick={() => handleNavClick('home')}>David Shaffer</SocialLogo>
+                            <SocialLogo as="div" onClick={() => handleNavClick('home')}><h2>David Shaffer</h2></SocialLogo>
                             <WebsiteRights>David Shaffer © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink href='https://www.linkedin.com/in/david-shaffer-111a89228/' target='_blank' aria-label='LinkedIn'>

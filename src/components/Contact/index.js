@@ -54,7 +54,7 @@ const Contact = () => {
                                 <Text>
                                     You can also reach me at:
                                 </Text>
-                                <EmailA href="mailto:dshaffer@ithaca.edu">dshaffer@ithaca.edu</EmailA>
+                                <EmailA href="mailto:dshaffer@ithaca.edu">davidshaffercreative@gmail.com</EmailA>
                             </EmailWrap>
                         </Column2>
                     </InfoRow>

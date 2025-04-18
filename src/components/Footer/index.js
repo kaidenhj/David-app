@@ -41,8 +41,8 @@ const Footer = () => {
                             </FooterLinkItems>
                             <FooterLinkItems>
                                 <FooterLinkTitle>Socials:</FooterLinkTitle>
-                                <FooterExternalLink href='https://www.linkedin.com/in/kaiden-jones-16888b2b2/'>LinkedIn</FooterExternalLink>
-                                <FooterExternalLink href='https://www.instagram.com/_david_shaffer_/?hl=en'>Instagram</FooterExternalLink>
+                                <FooterExternalLink href='https://www.linkedin.com/in/david-shaffer-111a89228/' target="_blank">LinkedIn</FooterExternalLink>
+                                <FooterExternalLink href='https://www.instagram.com/_david_shaffer_/?hl=en' target="_blank">Instagram</FooterExternalLink>
                             </FooterLinkItems>
                         </FooterLinksWrapper>
                     </FooterLinksContainer>

@@ -87,7 +87,7 @@ export const EmailWrap = styled.div`
 `
 
 export const EmailA = styled.a`
-    font-size: clamp(24px, 4vw, 48px); 
+    font-size: clamp(16px, 4vw, 32px); 
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;

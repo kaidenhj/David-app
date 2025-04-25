@@ -64,7 +64,7 @@ export const FooterInternalRoute = styled(LinkRouter)`
     cursor: pointer;
 
     &:hover{
-        color: ${colors.primary};
+        color: ${colors.primaryDark};
         transition: 0.3s ease-out;
     }
 `;
@@ -77,7 +77,7 @@ export const FooterExternalLink = styled.a`
     cursor: pointer;
 
     &:hover{
-        color: ${colors.primary};
+        color: ${colors.primaryDark};
         transition: 0.3s ease-out;
     }
 `;
@@ -111,7 +111,7 @@ export const SocialLogo = styled(LinkScroll)`
     font-weight: bold;
 
     &:hover{
-        color: ${colors.primary};
+        color: ${colors.primaryDark};
         transition: 0.3s ease-out;
     }
 `;
@@ -133,7 +133,7 @@ export const SocialIconLink = styled.a`
     font-size: 24px;
     
     &:hover{
-        color: ${colors.primary};
+        color: ${colors.primaryDark};
         transition: 0.3s ease-out;
     }
 `;

@@ -20,10 +20,13 @@ export const PortfolioGrid = styled.div`
 
 export const ImageDescription = styled.p`
     position: absolute;
-    font-size: 18px;
+    font-size: clamp(8px, 4vw, 18px);
     color: ${colors.primaryDark};
-    padding: 40px 15px;
     text-align: center;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 10px;
+    right: 10px;
     visibility: hidden;
     z-index: 2;
 `;
@@ -37,6 +40,23 @@ export const PortfolioH2 = styled.p`
     visibility: hidden;
     z-index: 2;
 `;
+
+export const PortfolioButton = styled.div`
+    z-index: 2;
+    visibility: hidden;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: clamp(16px, 4vw, 24px);
+    color: ${colors.primaryDark};
+
+    &:hover {
+        text-decoration: underline;
+        transition: 0.3s ease-in-out;
+    }
+`
 
 export const PortfolioImg = styled.img`
     width: 100%;
@@ -73,6 +93,13 @@ export const PortfolioCard = styled.div`
     &:hover ${PortfolioH2} {
         transition: filter 0.3s ease-in-out;
         visibility: visible;
+    }
+            
+    &:hover ${PortfolioButton} {
+        ${({ button }) => button && `
+        visibility: visible;
+        transition: filter 0.3s ease-in-out;
+        `}
     }
 `;
 

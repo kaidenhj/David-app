@@ -19,7 +19,6 @@ const Home = () => {
     }
 
     useEffect(() => {
-      console.log("home scroll")
       if (location.state?.scrollTo) {
         const sectionId = location.state.scrollTo;
     

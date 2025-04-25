@@ -21,7 +21,6 @@ function Carousel() {
 
   const cardsPerSet = carouselImages.length;
   const currentIndex = Math.round(-translateX / cardWidth);
-  console.log("Current Portfilio Card Index"+currentIndex)
 
   useEffect(() => {
     if (cardRef.current && trackRef.current) {
@@ -94,6 +93,7 @@ function Carousel() {
                 description={card.description}
                 button={card.button}
                 header={card.header}
+                video={card.video}
               />
           ))}
         </CarouselTrack>

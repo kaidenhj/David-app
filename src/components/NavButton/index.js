@@ -8,7 +8,6 @@ const NavButton = ({toggle}) => {
 
     useEffect(() => {
         const sections = document.querySelectorAll('#home, #demo, #about, #portfolio, #contact');
-        console.log(sections);
 
         const observer = new IntersectionObserver(
             (entries) => {

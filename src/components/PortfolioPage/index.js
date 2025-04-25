@@ -12,10 +12,6 @@ const PortfolioPage = () => {
       }, []);
 
     const playVideo = ({ video }) => {
-        // if (video.includes("youtube")) {
-        //     window.open(video, "_blank");
-        //     return;
-        // }
         setCurrentVideo(video);
         setShowVideo(true);
     };

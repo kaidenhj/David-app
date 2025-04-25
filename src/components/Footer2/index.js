@@ -22,13 +22,10 @@ const Footer = () => {
     const location = useLocation();
 
     const handleNavClick = (sectionId) => {
-        console.log("in handle click")
         if (location.pathname === '/') {
-          console.log("On home page")
           const section = document.getElementById(sectionId);
           if (section) section.scrollIntoView({ behavior: 'smooth' });
         } else {
-          console.log("Not on home page")
           navigate('/', { state: { scrollTo: sectionId } });
         }
     };

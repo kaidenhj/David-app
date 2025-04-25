@@ -10,11 +10,9 @@ const Sidebar = ({isOpen, toggle}) => {
     
     const handleNavClick = (sectionId) => {
       if (location.pathname === '/') {
-        console.log("On home page")
         const section = document.getElementById(sectionId);
         if (section) section.scrollIntoView({ behavior: 'smooth' });
       } else {
-        console.log("Not on home page")
         navigate('/', { state: { scrollTo: sectionId } });
       }
     };

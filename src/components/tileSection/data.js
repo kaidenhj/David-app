@@ -5,8 +5,7 @@ export const homeObjOne = {
     lightText: false,
     lightTextDesc: false,
     headline: 'About Me',
-    description: 
-    "I navigate the realms of software, data, and environmental technology to craft techinical solutions. My passion lies in the intersection of computer science and nature, where I strive to use technical skills to make a tangible impact. \n \n I'm a software developer with a strong foundation in algorithms, data structures, and web development. My experience spans across languages like Python, Java, C, and JavaScript. Whether it’s machine learning, backend systems, or GIS mapping, I love tackling problems that push me to think critically and creatively. \n \n Beyond coding, I find inspiration in nature, research, and collaboration. I enjoy learning new technologies, experimenting with hardware, and exploring ways to blend my passion for the Adventure with my technical expertise. One day, I hope to develop tools that redefine how we interact with and protect the natural world.",
+    description: "I’m a hardworking and passionate individual with a background in location sound recording, sound design, live event and studio production, and television production. I’m also well versed in softwares such as ProTools, Izotope RX, Adobe Premiere Pro, Illustrator, Photoshop, and After Effects.",
     buttonLabel: 'Resume',
     imgStart: true,
     img: require('../../images/headshot.jpg'),

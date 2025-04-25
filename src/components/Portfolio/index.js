@@ -16,7 +16,7 @@ const Portfolio = () => {
                 <Carousel />
 
                 <PortfolioTextContainer>
-                    <PortfolioP>My portfolio showcases my skills and projects. Click on the image to explore.</PortfolioP>
+                    <PortfolioP>Take a look at some of the works I’ve completed throughout my time working in audio, video, motion graphics, and live events.</PortfolioP>
                     <br />
                     <Button to="/portfolioPage">Explore</Button>
                 </PortfolioTextContainer>

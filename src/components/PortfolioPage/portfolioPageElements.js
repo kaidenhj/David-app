@@ -22,8 +22,8 @@ export const ImageDescription = styled.p`
     position: absolute;
     font-size: clamp(8px, 4vw, 18px);
     color: ${colors.primaryDark};
-    text-align: center;
-    top: 55%;
+    text-align: left;
+    top: 52%;
     transform: translateY(-50%);
     left: 10px;
     right: 10px;
@@ -36,7 +36,7 @@ export const PortfolioH2 = styled.p`
     font-size: 28px;
     color: ${colors.primaryDark};
     padding: 6px 15px;
-    text-align: center;
+    text-align: left;
     visibility: hidden;
     z-index: 2;
 `;

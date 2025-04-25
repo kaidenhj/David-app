@@ -11,7 +11,11 @@ const PortfolioPage = () => {
         window.scrollTo(0, 0);
       }, []);
 
-      const playVideo = ({ video }) => {
+    const playVideo = ({ video }) => {
+        // if (video.includes("youtube")) {
+        //     window.open(video, "_blank");
+        //     return;
+        // }
         setCurrentVideo(video);
         setShowVideo(true);
     };
@@ -20,6 +24,10 @@ const PortfolioPage = () => {
         setShowVideo(false);
         setCurrentVideo(null);
     };
+
+    const isYouTubeLink = (url) => {
+        return typeof url.includes("youtube.com") || url.includes("youtu.be");
+      };
 
     return (
         <>
@@ -65,10 +73,22 @@ const PortfolioPage = () => {
                             >
                             ✕
                             </button>
-                            <video controls autoPlay controlsList="nodownload" style={{ width: "100%", borderRadius: "8px" }}>
-                                <source src={currentVideo} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
+                            {isYouTubeLink(currentVideo) ? (
+                                <iframe
+                                    width="100%"
+                                    height="500"
+                                    src={currentVideo}
+                                    title="YouTube video"
+                                    frameBorder="0"
+                                    allow="autoplay; encrypted-media"
+                                    allowFullScreen
+                                />
+                                ) : (
+                                <video controls autoPlay style={{ width: "100%", borderRadius: "8px" }}>
+                                    <source src={currentVideo} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            )}
                         </div>
                     </div>
                 )}

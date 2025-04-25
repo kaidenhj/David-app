@@ -27,7 +27,6 @@ export const PortfolioTextContainer = styled.div`
 `;
 
 export const PortfolioH2 = styled.h2`
-
     font-size: 48px;
     color: ${colors.primaryDark};
 

@@ -92,6 +92,7 @@ function Carousel() {
                 key={index}
                 prop={card.img}
                 description={card.description}
+                button={card.button}
                 header={card.header}
               />
           ))}

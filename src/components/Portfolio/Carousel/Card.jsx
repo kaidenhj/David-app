@@ -1,11 +1,12 @@
 import React from "react";
-import { CardContainer, CardImg, CardH2, CardDescription } from "./CardElements";
+import { CardButton, CardContainer, CardImg, CardH2, CardDescription } from "./CardElements";
 
-const Card = React.forwardRef(({ prop, description, header}, ref) => {
+const Card = React.forwardRef(({ prop, description, header, button}, ref) => {
   return (
-    <CardContainer ref={ref}>
+    <CardContainer ref={ref} button={button}>
       <CardImg src={prop} alt={description} />
       <CardH2>{header}</CardH2>
+      <CardButton>Play Video</CardButton>
       <CardDescription>{description}</CardDescription>
     </CardContainer>
   );

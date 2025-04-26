@@ -4,8 +4,7 @@ import carouselImages from "./data";
 import { CarouselContainer, CarouselWrapper, CarouselTrack, Handle } from "./CarouselElements";
 import {IoMdArrowDropright, IoMdArrowDropleft} from "react-icons/io";
 
-
-function Carousel() {
+const Carousel = ({ onPlayVideo }) => {
   const [cards] = useState([
     ...carouselImages,
     ...carouselImages,
@@ -94,6 +93,7 @@ function Carousel() {
                 button={card.button}
                 header={card.header}
                 video={card.video}
+                onPlayVideo={onPlayVideo}
               />
           ))}
         </CarouselTrack>

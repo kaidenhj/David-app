@@ -24,7 +24,7 @@ export const images = [
   { img: Mario_img, video: Mario_vid, button: true, header: "Super Mario Bros Trailer Remix", description: "ADR Recordist/Sound Designer - This was a project I completed with the goal of remixing the audio of a popular trailer for a movie that was in theaters during the time of class."},
   { img: after_img, video: afterVideo, button: true, header: "After", description: "This was one of my favorite projects I’ve ever worked on. I enjoyed getting to enhance the story of these two ghosts through the use of sound."},
   { img: Commencement_img, video: comensmentVideo, button: true, header: "Ithaca College Spring Commencement 2024", description: "Technical Lead and Technical Director - For this ceremony and livestream, I was largely responsible for establishing all of the signal flow within the control room and the stadium to ensure a smooth "},
-  { img: or_best_offer_img, video: or_best_offer_vid, button: true, header: "Or Best Offer", description: "Sound Designer - Description"}
+  { img: or_best_offer_img, video: or_best_offer_vid, button: true, header: "Or Best Offer", description: "Sound Designer"}
 ];
 
 export default images;

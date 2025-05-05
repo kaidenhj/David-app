@@ -164,6 +164,24 @@ export const FormInput = styled.input`
     border: none;
 `
 
+export const Button = styled.input`
+    width: 70px;
+    font-size: 20px;
+    background: ${colors.darkBrown};
+    white-space: nowrap;
+    color: ${colors.lightBrown};
+    text-decoration: underline;
+    cursor: pointer;
+    display: flex;
+    border: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        font-weight: bold;
+        color: ${colors.primary};
+    }
+`
+
 export const Text = styled.p` 
     text-align: left;
     margin-top: 24px;

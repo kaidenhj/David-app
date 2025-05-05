@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
-import { Button } from '../ButtonElement'
-import { FormInput, InfoContainer, InfoWrapper, Text,  InfoRow, Column1, Column2, EmailWrap, EmailA, FormWrap, Form, FormH1, FormH2, FormLabel, FormTextArea
+import { Button, FormInput, InfoContainer, InfoWrapper, Text,  InfoRow, Column1, Column2, EmailWrap, EmailA, FormWrap, Form, FormH1, FormH2, FormLabel, FormTextArea
  } from "./contactElements";
 
 const Contact = () => {
@@ -45,7 +44,7 @@ const Contact = () => {
                                     <FormInput type='text' name='subject' required />
                                     <FormLabel htmlFor='for'>Message</FormLabel>
                                     <FormTextArea name='message' />
-                                    <Button lightColor={true} type='submit'>Send</Button>
+                                    <Button type='submit' value='Send' />
                                 </Form>
                             </FormWrap>
                         </Column1>

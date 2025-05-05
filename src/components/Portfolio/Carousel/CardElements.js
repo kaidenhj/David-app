@@ -21,16 +21,8 @@ export const CardH2 = styled.h2`
 `
 
 export const CardDescription = styled.p`
-  // position: absolute;
-  // font-size: 16px;
-  // color: ${colors.primaryDark};
-  // padding: 40px 7px;
-  // visibility: hidden;
-  // z-index: 3;
-  // flex-direction: row;
-
   position: absolute;
-  font-size: clamp(8px, 4vw, 18px);
+  font-size: clamp(6px, 4vw, 16px);
   color: ${colors.primaryDark};
   padding: 6px 7px;
   text-align: left;

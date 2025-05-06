@@ -9,10 +9,8 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroH1>I'm David Shaffer.</HeroH1>
                 <HeroP>
-                I am a recent graduate of Ithaca College with a degree in TVDM and a minor in Audio.
-                I am a passionate filmmaker and photographer with a strong interest in the world of media production.
-                I am currently seeking opportunities to work in the media industry and gain valuable experience.
-                I am particularly interested in working in the fields of production and post-production.
+                    I’m a recent graduate of Ithaca College with a Bachelor of Science in Television and Digital Media Production and a Minor in Audio Production.
+                    I’m at the beginning of my career in the media industry, and I’m eager to start building a name for myself and my work.
                 </HeroP>
             </HeroContent>
             <HeroBg>

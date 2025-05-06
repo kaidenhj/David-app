@@ -26,35 +26,24 @@ export const HeroContainer = styled.div`
 `
  
 export const HeroBg = styled.div`
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    position: relative;
+    width: 80%;
     height: 100%;
+    z-index: 0;
     overflow: hidden;
 `
 
-export const ImgBg = styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background: ${colors.black};
-`
 export const Img = styled.img`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
     object-fit: cover;
     background: ${colors.black};
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
 `
 
 
@@ -89,7 +78,7 @@ export const HeroP = styled.p`
     color: ${colors.primary};
     font-size; 24px;
     text-align: left;
-    max-width: 1200px;
+    max-width: 650px;
 
     @media screen and (max-width: 768px){
         font-size: 24px;

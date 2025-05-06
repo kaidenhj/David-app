@@ -163,7 +163,7 @@ export const FormInput = styled.input`
     margin-bottom: 32px;
     border: none;
 `
-hero
+
 export const Button = styled.input`
     width: 70px;
     font-size: 20px;

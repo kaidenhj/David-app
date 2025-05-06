@@ -1,5 +1,6 @@
 import React from "react";
-import { HeroContainer, HeroContent, HeroH1, HeroP} from "./heroElements";
+import { HeroBg, Img, HeroContainer, HeroContent, HeroH1, HeroP} from "./heroElements";
+import img from "../../images/hero_img.png"
 
 const HeroSection = () => {
 
@@ -14,6 +15,9 @@ const HeroSection = () => {
                 I am particularly interested in working in the fields of production and post-production.
                 </HeroP>
             </HeroContent>
+            <HeroBg>
+                <Img src={img} alt="Backgroung image of person infront of Hollywood sign." />
+            </HeroBg>
         </HeroContainer>
     );
 };

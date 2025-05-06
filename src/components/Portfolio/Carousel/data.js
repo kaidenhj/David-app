@@ -15,7 +15,7 @@ export const images = [
   { img: Strike_img, video: strikeVideo, button: true, header: "Strike!", description: "This was a project I completed for a motion graphics and animation course. I was quite proud of it so I submitted it to the Broadcast Education Association’s On Location Creative Competition where I won Best Short Narrative."},
   { img: after_img, video: afterVideo, button: true, header: "After", description: "This was one of my favorite projects I’ve ever worked on. I enjoyed getting to enhance the story of these two ghosts through the use of sound."},
   { img: Commencement_img, video: comensmentVideo, button: true, header: "Ithaca College Spring Commencement 2024", description: "Technical Lead and Technical Director - For this ceremony and livestream, I was largely responsible for establishing all of the signal flow within the control room and the stadium to ensure a smooth "},
-  { img: RX_experience_img, video: RX_experience_vid, button: true, header: "RX Experiance", description: "I was given a short scene from a film for a class  where the location sound was quite messy. I utilized Izotope RX to assist in cleaning lots of the audio."}
+  { img: RX_experience_img, video: RX_experience_vid, button: true, header: "RX Experience", description: "I was given a short scene from a film for a class  where the location sound was quite messy. I utilized Izotope RX to assist in cleaning lots of the audio."}
 ];
 
 export default images;

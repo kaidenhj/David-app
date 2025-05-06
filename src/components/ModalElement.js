@@ -48,7 +48,7 @@ const VideoModal = ({ videoUrl, onClose }) => {
             allowFullScreen
           />
         ) : (
-          <video controls autoPlay style={{ width: "100%", borderRadius: "8px" }}>
+          <video controls controlsList="nodownload" autoPlay style={{ width: "100%", borderRadius: "8px" }}>
             <source src={videoUrl} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

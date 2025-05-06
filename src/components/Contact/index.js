@@ -4,17 +4,12 @@ import { Button, FormInput, InfoContainer, InfoWrapper, Text,  InfoRow, Column1,
  } from "./contactElements";
 
 const Contact = () => {
-
     const form = useRef();
 
     const sendEmail = (e) => {
-        console.log("Send email started");
-
-        console.log("Form Data:", form.current);
-
         e.preventDefault();
 
-        emailjs.sendForm('service_dwgrh0s', 'template_da723f8', form.current, '8wiqg8IgHi9uWrlcM')
+        emailjs.sendForm('service_98fa93b', 'template_p39uxfm', form.current, '8wiqg8IgHi9uWrlcM')
             .then((result) => {
                 console.log("sent: ");
                 console.log(result.text);
@@ -22,8 +17,7 @@ const Contact = () => {
                 console.log("Error: ");
                 console.log(error.text);
             });
-        e.target.reset();
-        console.log("Send email ended");
+        form.current.reset();
     }
 
 
@@ -44,7 +38,7 @@ const Contact = () => {
                                     <FormInput type='text' name='subject' required />
                                     <FormLabel htmlFor='for'>Message</FormLabel>
                                     <FormTextArea name='message' />
-                                    <Button type='submit' value='Send' />
+                                    <Button type='submit' value='Send' onClick={sendEmail}/>
                                 </Form>
                             </FormWrap>
                         </Column1>

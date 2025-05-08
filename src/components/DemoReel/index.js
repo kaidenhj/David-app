@@ -1,6 +1,6 @@
 import React from "react";
 import { DemoContainer, DemoH1, DemoTextContainer, DemoWrapper, DemoVideoContainer, DemoVideo, DemoP} from "./demoElements";
-import video from "../Videos/video.mp4";
+import video from "../Videos/David_Shaffer_Demo_Reel.mp4";
 
 const Portfolio = () => {
 

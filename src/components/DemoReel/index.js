@@ -16,7 +16,7 @@ const Portfolio = () => {
                     </DemoVideo>
                 </DemoVideoContainer>
                 <DemoTextContainer>
-                    <DemoP>Watch my demo reel to see what I do ;)</DemoP>
+                    <DemoP>Watch my demo reel to see what I do.</DemoP>
                 </DemoTextContainer>
             </DemoWrapper> 
         </DemoContainer>

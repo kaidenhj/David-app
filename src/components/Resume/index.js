@@ -7,7 +7,7 @@ const Resume = () => {
       <Container>
         <PdfIframe 
           title="resume document" 
-          src="/David_Resume.pdf">
+          src="/David-Shaffer-Resume.pdf">
         </PdfIframe>
       </Container>
     </>

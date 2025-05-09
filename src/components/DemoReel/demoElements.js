@@ -10,15 +10,6 @@ export const DemoContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     background: ${colors.tan};
-
-    /* Only override on small screens */
-    @media screen and (max-width: 1024px) {
-        height: 85vh;
-    }
-
-    @media screen and (max-width: 768px) {
-        height: 75vh;
-    }
 `;
 
 export const DemoTextContainer = styled.div`

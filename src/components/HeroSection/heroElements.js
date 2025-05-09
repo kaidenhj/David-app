@@ -25,26 +25,56 @@ export const HeroContainer = styled.div`
     }
 `
  
+// export const HeroBg = styled.div`
+//     position: relative;
+//     width: 80%;
+//     height: 100%;
+//     z-index: 0;
+//     overflow: hidden;
+// `
+
+// export const Img = styled.img`
+//     position: absolute;
+//     top: 60%;
+//     left: 75%;
+//     transform: translate(-50%, -50%);
+//     max-width: 100%;
+//     max-height: 80%;
+//     width: auto;
+//     height: auto;
+//     object-fit: cover;
+//     background: ${colors.black};
+// `
+
 export const HeroBg = styled.div`
-    position: relative;
-    width: 80%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden;
-`
+  position: relative;
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Optional: maintains shape */
+  z-index: 0;
+  overflow: hidden;
+//   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
 
 export const Img = styled.img`
-    position: absolute;
-    top: 60%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-    max-height: 80%;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    background: ${colors.black};
-`
+  position: absolute;
+  top: 60%;  /* centered vertically */
+  left: 75%; /* centered horizontally */
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  background: ${colors.black};
+
+  @media (max-width: 768px) {
+    object-position: right;
+  }
+`;
 
 
 export const HeroContent = styled.div`

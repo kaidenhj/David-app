@@ -58,6 +58,12 @@ export const CardContainer = styled.div`
   padding: 0 10px;
   aspect-ratio: 4 / 3;
 
+  @media (max-width: 1300px) {
+    ${CardDescription} {
+      display: none;
+    }
+  }
+
   &:hover{
     transition: filter 0.3s ease-in-out;
     background: ${colors.primaryLight};
@@ -88,4 +94,7 @@ export const CardContainer = styled.div`
       `}
   }
 `;
+
+
+
 

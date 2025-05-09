@@ -17,6 +17,16 @@ const Contact = () => {
                 console.log("Error: ");
                 console.log(error.text);
             });
+
+        emailjs.sendForm('service_98fa93b', 'template_iil7zuu', form.current, '8wiqg8IgHi9uWrlcM')
+            .then((result) => {
+                console.log("sent: ");
+                console.log(result.text);
+            }, (error) => {
+                console.log("Error: ");
+                console.log(error.text);
+            });
+
         form.current.reset();
     }
 
